@@ -32,16 +32,16 @@ undum.game.situations = {
 		),
 		
 		casaseiltos: new undum.SimpleSituation (
-				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='durmiendo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
+				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='nocogerlo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
 		),
 		atender: new undum.SimpleSituation(
 			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
 			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamado para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
 			<p>Para entrar mas en detalle decides prepararte y <a href='hotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente asesinato, ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/"
 		),
-		levantarse: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/levantarse.jpg'>\
-<p>Levantarse temprano tiene su ventajas y consecuencias también, ya que puedes aprovechar el dia o estar muy cansado todo el dia, cuando te levantes tienes dos opciones para hacer, o bien <a href='gimnasio'> ir al gimnasio </a> o <a href='practica'> hacer la práctica de desarrollo ágil.</a></p>"
+		nocogerlo: new undum.SimpleSituation(
+			"<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
+<p>El teléfono suena y suena mientras tú sigues 'poniendote al día en las redes' hasta que a la media hora para. A las dos horas recibes una visita a tu oficina, y piensas..¿Quién viene un domingo a las 16:30? Abres la puerta y te encuentras con que para tu sorpresa es Elodín, director del hotel Redfern, y no me visitaba para regalarme una estancia en su hotel por mi trabajo, eso habría querido yo jejejejeje. Tras hablar con él, me cuenta que ha habido un asesinato y nos disponemos a <a href='hotel'>ir al hotel</a>y una vez allí detallar en profundidad sobre lo ocurrido.</p>"
 		),
 
 		gimnasio: new undum.SimpleSituation(
