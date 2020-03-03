@@ -1,6 +1,7 @@
 body {
     background: url("../Imagenes/fondo.jpg") repeat;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    font-style: italic;
     font-size: 18px;
     line-height: 1.6em;
     background-attachment: fixed;
