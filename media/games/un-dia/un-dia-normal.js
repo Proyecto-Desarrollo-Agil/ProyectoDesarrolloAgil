@@ -21,18 +21,18 @@ jQuery.fx.off=false
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-				"<h1>Tu cama</h1>\
-				<p>Acabas de despertarte.</p>",
+				"<h1>Oficina</h1>\
+				<p>Otro día en el descanso para la comida en la oficina.</p>",
 				{
 	        enter: function(character, system, from) {
-	            system.doLink('buenosdias');
+	            system.doLink('casaseiltos');
 	        }
 
 				}
 		),
 		
-		buenosdias: new undum.SimpleSituation (
-				"<p>Lunes 17 de mayo de 2020 sobre las 8:30 de la mañana, cuando sonó la alarma,y entonces piensas entre <a href='levantarse'>levantarte </a> o <a href='durmiendo'>quedarte durmiendo</a>, ya que habías tenido un fin de semana ajetreado, y no precisamente de estudiar mucho....</p>"
+		casaseiltos: new undum.SimpleSituation (
+				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='levantarse'>atender la llamada</a> o <a href='durmiendo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
 		),
 		durmiendo: new undum.SimpleSituation(
 			"<img class='img-situation' src='./media/Imagenes/dormir.jpg'>\
