@@ -32,10 +32,10 @@ undum.game.situations = {
 		),
 		
 		casaseiltos: new undum.SimpleSituation (
-				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='levantarse'>atender la llamada</a> o <a href='durmiendo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
+				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='durmiendo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
 		),
-		durmiendo: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/dormir.jpg'>\
+		atender: new undum.SimpleSituation(
+			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
 			<p>Quedarse dormido tiene sus consecuencias y sus ventajas, pasamos a discutirlas; como por ejemplo, no poder aprovechar la mañana y tener que hacer más cosas para la tarde, pero claro si estás muy cansado y necesitas dormir, es una ventaja para poder afrontar el día con más fuerza e ir a la Universidad de Jaén (UJA).</p>\
 			<p>Vuelves a abrir los ojos, te dispones a mirar el reloj y te das cuenta de que son las 15:30 de la tarde, es entonces cuando recuerdas que tenías clase a las 16:30 y por tanto solo te queda la opción de <a href='uja'>ir a la UJA </a> a contrareloj por gustarte demasiado la cama...</p>/"
 		),
