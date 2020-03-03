@@ -36,8 +36,8 @@ undum.game.situations = {
 		),
 		atender: new undum.SimpleSituation(
 			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
-			<p>Quedarse dormido tiene sus consecuencias y sus ventajas, pasamos a discutirlas; como por ejemplo, no poder aprovechar la mañana y tener que hacer más cosas para la tarde, pero claro si estás muy cansado y necesitas dormir, es una ventaja para poder afrontar el día con más fuerza e ir a la Universidad de Jaén (UJA).</p>\
-			<p>Vuelves a abrir los ojos, te dispones a mirar el reloj y te das cuenta de que son las 15:30 de la tarde, es entonces cuando recuerdas que tenías clase a las 16:30 y por tanto solo te queda la opción de <a href='uja'>ir a la UJA </a> a contrareloj por gustarte demasiado la cama...</p>/"
+			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamada para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
+			<p>Para entrar mas en detalle decides prepararte y <a href='hotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente asesinato, ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/"
 		),
 		levantarse: new undum.SimpleSituation(
 			"<img class='img-situation' src='./media/Imagenes/levantarse.jpg'>\
@@ -56,7 +56,7 @@ undum.game.situations = {
 		),
 		
 
-		uja: new undum.SimpleSituation(
+		hotel: new undum.SimpleSituation(
 			"<h1>UJA</h1>\
 			<img class='img-situation' src='./media/Imagenes/universidad.jpg'>\
 			<p>Una vez te encuentras en la Universidad de Jaén (UJA), te surge la duda de si <a href='entrar'>entrar a clase</a> o sin embargo <a href='noentrar'>quedarte en una mesa del A4</a> puesto recuerdas que tienes que entregar una práctica de la asignatura Desarrollo Ágil y aun falta bastante por hacer.</a></p>"
