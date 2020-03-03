@@ -57,8 +57,8 @@ undum.game.situations = {
 		
 
 		hotel: new undum.SimpleSituation(
-			"<h1>UJA</h1>\
-			<img class='img-situation' src='./media/Imagenes/universidad.jpg'>\
+			"<h1>HOTEL</h1>\
+			<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
 			<p>Una vez te encuentras en la Universidad de Jaén (UJA), te surge la duda de si <a href='entrar'>entrar a clase</a> o sin embargo <a href='noentrar'>quedarte en una mesa del A4</a> puesto recuerdas que tienes que entregar una práctica de la asignatura Desarrollo Ágil y aun falta bastante por hacer.</a></p>"
 		),
 		
