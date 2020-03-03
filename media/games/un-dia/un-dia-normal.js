@@ -36,7 +36,7 @@ undum.game.situations = {
 		),
 		atender: new undum.SimpleSituation(
 			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
-			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamada para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
+			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamado para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
 			<p>Para entrar mas en detalle decides prepararte y <a href='hotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente asesinato, ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/"
 		),
 		levantarse: new undum.SimpleSituation(
