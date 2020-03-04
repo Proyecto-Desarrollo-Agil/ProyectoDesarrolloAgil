@@ -49,7 +49,8 @@ undum.game.situations = {
 			<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
 <p>Una vez, hemos llegado al hotel, nos disponemos a salir del taxi, que tenía cierto olor a cuadra, y te encuentras que la escena no tiene ese ambiente morboso típico de los asesinatos misteriosos.</p>\
 <p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al resto, tapándose la cara con las manos.</p>\
-<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca abajo. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
 <p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='Jim'>Jim</a>, <a href='Antoine'>Antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
 		),
 		
