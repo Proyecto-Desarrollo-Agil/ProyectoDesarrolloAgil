@@ -43,57 +43,16 @@ undum.game.situations = {
 			"<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
 <p>El teléfono suena y suena mientras tú sigues 'poniendote al día en las redes' hasta que a la media hora para. A las dos horas recibes una visita a tu oficina, y piensas..¿Quién viene un domingo a las 16:30? Abres la puerta y te encuentras con que para tu sorpresa es Elodín, director del hotel Redfern, y no me visitaba para regalarme una estancia en su hotel por mi trabajo, eso habría querido yo jejejejeje. Tras hablar con él, me cuenta que ha habido un asesinato y nos disponemos a <a href='hotel'>ir al hotel</a>y una vez allí detallar en profundidad sobre lo ocurrido.</p>"
 		),
-
-		gimnasio: new undum.SimpleSituation(
-			"<h1>Gimnasio</h1>\
-			<img class='img-situation' src='./media/Imagenes/gimnasio.jpg'>\
-			<p>Si llegas muy pronto al gimnasio está cerrado, y te preguntas qué hacer en ese caso, y entonces o <a href='desayunar'> desayunas en el bar </a>vecino del gimnasio o <a href='volver'> vuelves a casa </a> cabreado.</a></p>"
-		),
-
-		desayunar: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/desayunar.jpg'>\
-<p>Si desayunas en el bar bien, tendrás más energía para afrontar un entrenamiento de lujo y sentirte bien contigo mismo y estarás contento para después también <a href='practicabuena'>hacer la práctica con ganas.</a></a></p>"
-		),
 		
-
 		hotel: new undum.SimpleSituation(
 			"<h1>HOTEL</h1>\
 			<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
-			<p>Una vez te encuentras en la Universidad de Jaén (UJA), te surge la duda de si <a href='entrar'>entrar a clase</a> o sin embargo <a href='noentrar'>quedarte en una mesa del A4</a> puesto recuerdas que tienes que entregar una práctica de la asignatura Desarrollo Ágil y aun falta bastante por hacer.</a></p>"
+<p>Una vez, hemos llegado al hotel, nos disponemos a salir del taxi, que tenía cierto olor a cuadra, y te encuentras que la escena no tiene ese ambiente morboso típico de los asesinatos misteriosos.</p>\
+<p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al resto, tapándose la cara con las manos.</p>\
+<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca abajo. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='Jim'>Jim</a>, <a href='Antoine'>Antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
 		),
 		
-		noentrar: new undum.SimpleSituation(
-			"<h1>Mesa del A4</h1>\
-			<p>Te dispones a sentarte en una mesa del flan, pero mientras subes las escaleras te encuentras a tu compañero de prácticas y resulta que ya tiene la práctica casi hecha, aunque tú te sientes mal, por otro lado te alegras he intentas <a href='practicabuena'>ayudarle en lo que queda de práctica</a>.</p>",	
-		),
-
-		volver: new undum.SimpleSituation(
-			"<p>Decides volver a casa para ponerte a hacer la práctica de desarrollo ágil cabreado (por ir al gimnasio y encontrarlo cerrado), y por lo tanto haces la <a href='practicamala'> práctica de mala manera</a> y no podrás obtener la nota suficiente para aprobar.</a></p>"
-		),
-
-		practica: new undum.SimpleSituation(
-			"<p>Si decides hacer la práctica recién levantado, no es buena idea ya que tendrás el estómago vacío y no podrás rendir bien para entender a la perfección la práctica, y <a href='practicamala'> se echa el tiempo de entregarla encima</a>.</a></p>"
-		),	
-
-		practicabuena: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/pulgararriba.jpg'>\
-<p>Finalmente queda un práctica medio decente, de tal forma que le puede gustar a nuestro profesor Victor Manuel Rivas y por ello, decidimos entregarla pese a todas las adversidades del camino.</a></p>"
-		),
-
-		practicamala: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/pulgarabajo.jpg'>\
-<p>Tras dedicarle un rato a la practica, te das cuenta de que la práctica te está quedando fatal, es en ese momento cuando recuerdas las sabias palabras del profesor Victorcillo de si no está para entregarlo mejor no entregarlo; y por tanto, no acabas entregando nada y frustrado.</a></p>/"
-		),
-
-
-		entrar: new undum.SimpleSituation(
-			"<h1>Entras a clase</h1>\
-			<p>Decides entrar a clase, te quedan por delante 5h de clase... después de todo el fin de semana y de llevar tan solo una media hora despierto no te enteras de nada.</p>\
-			<p>Llega última hora y te sacan a la pizarra a un ejercicio que no tienes ni idea para poner el broche final a la tarde.</p>\
-			<p>Llegas a casa e <a href='practicamala'>intentas ponerte con la práctica de Desarrollo ágil</a>.</p>/"
-		),
-	
-
 
 };
 
