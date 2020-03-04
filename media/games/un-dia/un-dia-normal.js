@@ -51,7 +51,11 @@ undum.game.situations = {
 <p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al resto, tapándose la cara con las manos.</p>\
 <p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
 <img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
-<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='Jim'>Jim</a>, <a href='Antoine'>Antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
+<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='jim'>Jim</a>, <a href='Antoine'>antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
+		),
+
+		jim: new undum.SimpleSituation(
+"<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.</p>/"
 		),
 		
 
