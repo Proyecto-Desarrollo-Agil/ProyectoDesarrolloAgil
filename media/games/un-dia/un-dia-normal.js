@@ -62,6 +62,10 @@ undum.game.situations = {
 "<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>/"
 		),
 		
+		camarero: new undum.SimpleSituation(
+"<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba ahogando.</p>/"
+		),
+		
 
 };
 
