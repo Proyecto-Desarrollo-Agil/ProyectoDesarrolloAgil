@@ -21,79 +21,51 @@ jQuery.fx.off=false
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-				"<h1>Tu cama</h1>\
-				<p>Acabas de despertarte.</p>",
+				"<h1>Oficina</h1>\
+				<p>Otro día en el descanso para la comida en la oficina.</p>",
 				{
 	        enter: function(character, system, from) {
-	            system.doLink('buenosdias');
+	            system.doLink('casaseiltos');
 	        }
 
 				}
 		),
 		
-		buenosdias: new undum.SimpleSituation (
-				"<p>Lunes 17 de mayo de 2020 sobre las 8:30 de la mañana, cuando sonó la alarma,y entonces piensas entre <a href='levantarse'>levantarte </a> o <a href='durmiendo'>quedarte durmiendo</a>, ya que habías tenido un fin de semana ajetreado, y no precisamente de estudiar mucho....</p>"
+		casaseiltos: new undum.SimpleSituation (
+				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='nocogerlo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
 		),
-		durmiendo: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/dormir.jpg'>\
-			<p>Quedarse dormido tiene sus consecuencias y sus ventajas, pasamos a discutirlas; como por ejemplo, no poder aprovechar la mañana y tener que hacer más cosas para la tarde, pero claro si estás muy cansado y necesitas dormir, es una ventaja para poder afrontar el día con más fuerza e ir a la Universidad de Jaén (UJA).</p>\
-			<p>Vuelves a abrir los ojos, te dispones a mirar el reloj y te das cuenta de que son las 15:30 de la tarde, es entonces cuando recuerdas que tenías clase a las 16:30 y por tanto solo te queda la opción de <a href='uja'>ir a la UJA </a> a contrareloj por gustarte demasiado la cama...</p>/"
+		atender: new undum.SimpleSituation(
+			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
+			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamado para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
+			<p>Para entrar mas en detalle decides prepararte y <a href='hotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente asesinato, ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/"
 		),
-		levantarse: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/levantarse.jpg'>\
-<p>Levantarse temprano tiene su ventajas y consecuencias también, ya que puedes aprovechar el dia o estar muy cansado todo el dia, cuando te levantes tienes dos opciones para hacer, o bien <a href='gimnasio'> ir al gimnasio </a> o <a href='practica'> hacer la práctica de desarrollo ágil.</a></p>"
-		),
-
-		gimnasio: new undum.SimpleSituation(
-			"<h1>Gimnasio</h1>\
-			<img class='img-situation' src='./media/Imagenes/gimnasio.jpg'>\
-			<p>Si llegas muy pronto al gimnasio está cerrado, y te preguntas qué hacer en ese caso, y entonces o <a href='desayunar'> desayunas en el bar </a>vecino del gimnasio o <a href='volver'> vuelves a casa </a> cabreado.</a></p>"
-		),
-
-		desayunar: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/desayunar.jpg'>\
-<p>Si desayunas en el bar bien, tendrás más energía para afrontar un entrenamiento de lujo y sentirte bien contigo mismo y estarás contento para después también <a href='practicabuena'>hacer la práctica con ganas.</a></a></p>"
+		nocogerlo: new undum.SimpleSituation(
+			"<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
+<p>El teléfono suena y suena mientras tú sigues 'poniendote al día en las redes' hasta que a la media hora para. A las dos horas recibes una visita a tu oficina, y piensas..¿Quién viene un domingo a las 16:30? Abres la puerta y te encuentras con que para tu sorpresa es Elodín, director del hotel Redfern, y no me visitaba para regalarme una estancia en su hotel por mi trabajo, eso habría querido yo jejejejeje. Tras hablar con él, me cuenta que ha habido un asesinato y nos disponemos a <a href='hotel'>ir al hotel</a>y una vez allí detallar en profundidad sobre lo ocurrido.</p>"
 		),
 		
+		hotel: new undum.SimpleSituation(
+			"<h1>HOTEL</h1>\
+			<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
+<p>Una vez, hemos llegado al hotel, nos disponemos a salir del taxi, que tenía cierto olor a cuadra, y te encuentras que la escena no tiene ese ambiente morboso típico de los asesinatos misteriosos.</p>\
+<p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al resto, tapándose la cara con las manos.</p>\
+<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
+<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='jim'>Jim</a>, <a href='antoine'>Antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
+		),
 
-		uja: new undum.SimpleSituation(
-			"<h1>UJA</h1>\
-			<img class='img-situation' src='./media/Imagenes/universidad.jpg'>\
-			<p>Una vez te encuentras en la Universidad de Jaén (UJA), te surge la duda de si <a href='entrar'>entrar a clase</a> o sin embargo <a href='noentrar'>quedarte en una mesa del A4</a> puesto recuerdas que tienes que entregar una práctica de la asignatura Desarrollo Ágil y aun falta bastante por hacer.</a></p>"
+		jim: new undum.SimpleSituation(
+"<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.</p>/"
+		),
+
+		antoine: new undum.SimpleSituation(
+"<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>/"
 		),
 		
-		noentrar: new undum.SimpleSituation(
-			"<h1>Mesa del A4</h1>\
-			<p>Te dispones a sentarte en una mesa del flan, pero mientras subes las escaleras te encuentras a tu compañero de prácticas y resulta que ya tiene la práctica casi hecha, aunque tú te sientes mal, por otro lado te alegras he intentas <a href='practicabuena'>ayudarle en lo que queda de práctica</a>.</p>",	
+		camarero: new undum.SimpleSituation(
+"<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba ahogando.</p>/"
 		),
-
-		volver: new undum.SimpleSituation(
-			"<p>Decides volver a casa para ponerte a hacer la práctica de desarrollo ágil cabreado (por ir al gimnasio y encontrarlo cerrado), y por lo tanto haces la <a href='practicamala'> práctica de mala manera</a> y no podrás obtener la nota suficiente para aprobar.</a></p>"
-		),
-
-		practica: new undum.SimpleSituation(
-			"<p>Si decides hacer la práctica recién levantado, no es buena idea ya que tendrás el estómago vacío y no podrás rendir bien para entender a la perfección la práctica, y <a href='practicamala'> se echa el tiempo de entregarla encima</a>.</a></p>"
-		),	
-
-		practicabuena: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/pulgararriba.jpg'>\
-<p>Finalmente queda un práctica medio decente, de tal forma que le puede gustar a nuestro profesor Victor Manuel Rivas y por ello, decidimos entregarla pese a todas las adversidades del camino.</a></p>"
-		),
-
-		practicamala: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/pulgarabajo.jpg'>\
-<p>Tras dedicarle un rato a la practica, te das cuenta de que la práctica te está quedando fatal, es en ese momento cuando recuerdas las sabias palabras del profesor Victorcillo de si no está para entregarlo mejor no entregarlo; y por tanto, no acabas entregando nada y frustrado.</a></p>/"
-		),
-
-
-		entrar: new undum.SimpleSituation(
-			"<h1>Entras a clase</h1>\
-			<p>Decides entrar a clase, te quedan por delante 5h de clase... después de todo el fin de semana y de llevar tan solo una media hora despierto no te enteras de nada.</p>\
-			<p>Llega última hora y te sacan a la pizarra a un ejercicio que no tienes ni idea para poner el broche final a la tarde.</p>\
-			<p>Llegas a casa e <a href='practicamala'>intentas ponerte con la práctica de Desarrollo ágil</a>.</p>/"
-		),
-	
-
+		
 
 };
 
