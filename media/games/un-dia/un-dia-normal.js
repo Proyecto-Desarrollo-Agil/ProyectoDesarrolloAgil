@@ -25,13 +25,13 @@ undum.game.situations = {
 				<p>Otro día en el descanso para la comida en la oficina.</p>",
 				{
 	        enter: function(character, system, from) {
-	            system.doLink('casaseiltos');
+	            system.doLink('oficina');
 	        }
 
 				}
 		),
 		
-		casaseiltos: new undum.SimpleSituation (
+		oficina: new undum.SimpleSituation (
 				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='nocogerlo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
 		),
 		atender: new undum.SimpleSituation(
