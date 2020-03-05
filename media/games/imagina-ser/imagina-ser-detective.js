@@ -30,7 +30,7 @@ undum.game.situations = {
 
 				}
 		),
-		
+
 	oficinaselitos: new undum.SimpleSituation (
 			"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente \
 			comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el \
