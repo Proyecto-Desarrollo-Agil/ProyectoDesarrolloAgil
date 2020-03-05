@@ -25,50 +25,84 @@ undum.game.situations = {
 				<p>Otro día en el descanso para la comida en la oficina.</p>",
 				{
 	        enter: function(character, system, from) {
-	            system.doLink('oficina');
+	            system.doLink('oficinaselitos');
 	        }
 
 				}
 		),
-		
-		oficina: new undum.SimpleSituation (
-				"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='atender'>atender la llamada</a> o <a href='nocogerlo'>no cogerlo</a> y seguir viendo las redes sociales.</p>"
-		),
-		atender: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
-			<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente, quien realizaba la llamada era Elodín, director del hotel Redfern. Como supondréis no ha llamado para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha ocurrido un asesinato.</p>\
-			<p>Para entrar mas en detalle decides prepararte y <a href='hotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente asesinato, ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/"
-		),
-		nocogerlo: new undum.SimpleSituation(
-			"<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
-<p>El teléfono suena y suena mientras tú sigues 'poniendote al día en las redes' hasta que a la media hora para. A las dos horas recibes una visita a tu oficina, y piensas..¿Quién viene un domingo a las 16:30? Abres la puerta y te encuentras con que para tu sorpresa es Elodín, director del hotel Redfern, y no me visitaba para regalarme una estancia en su hotel por mi trabajo, eso habría querido yo jejejejeje. Tras hablar con él, me cuenta que ha habido un asesinato y nos disponemos a <a href='hotel'>ir al hotel</a>y una vez allí detallar en profundidad sobre lo ocurrido.</p>"
-		),
-		
-		hotel: new undum.SimpleSituation(
-			"<h1>HOTEL</h1>\
-			<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
-<p>Una vez, hemos llegado al hotel, nos disponemos a salir del taxi, que tenía cierto olor a cuadra, y te encuentras que la escena no tiene ese ambiente morboso típico de los asesinatos misteriosos.</p>\
-<p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al resto, tapándose la cara con las manos.</p>\
-<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
-<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
-<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Comienzas por interrogar a los empleados <a href='jim'>Jim</a>, <a href='antoine'>Antoine</a> y <a href='camarero'>El camarero</a>.</p>/"
-		),
 
-		jim: new undum.SimpleSituation(
-"<h1>Sala de entrevista</h1>\
-<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.</p>/"
-		),
+	oficinaselitos: new undum.SimpleSituation (
+			"<p>Te encuentras en el descanso para la hora de comer en tu oficina privada cuando de repente \
+			comienza a sonar el teléfono. Estás muy entretenido poniendote al día de lo que ha ocurrido en el \
+			mundo mientras trabajabas mirando el Facebook y puedes decidir entre <a href='./atender'>atender \
+			</a> o <a href='./noatender'>no atender</a> la llamada y seguir viendo las redes sociales.</p>",
+			{
+				actions: {
+					"atender": "<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
+					<p>Una vez has cogido el teléfono te das cuenta de que no es un caso corriente. AL otro lado \
+					del teléfono se encontraba Elodín, director del hotel Redfern. Como supondréis no ha \
+					llamado para invitarme a pasar unos dias de vacaciones en su lujoso hotel, sino que ha \
+					ocurrido un asesinato.</p> <p>Elodín te ha pedido que acudas cuanto antes. Decides prepararte y \
+					<a href='pasillohotel'>ponerte en camino hacia el hotel</a> para resolver este sorprendente \
+					caso. ¿Quién querría matar a alguien en el hotel con mayor prestigio de la ciudad?</p>/",
 
-		antoine: new undum.SimpleSituation(
-"<h1>Sala de entrevista</h1>\
-<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>/"
-		),
-		
-		camarero: new undum.SimpleSituation(
-"<h1>Sala de entrevista</h1>\
-<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba ahogando.</p>/"
-		),
-		
+					"noatender": "<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
+					<p>El teléfono no para de sonar mientras tú sigues 'poniendote al día en las redes' hasta que, \
+					a la media hora, para. Al rato, un par de golpes secos en la puerta te sacan de tu ensimismamiento \
+					y mientras te levantas para abrir, piensas: ¿Quién viene un domingo a las 3 de la tarde? Abres \
+					la puerta y te encuentras con que, para tu sorpresa, es Elodín, director del hotel Redfern, y no \
+					me visitaba para regalarme una estancia en su hotel por mi trabajo. En su cara se refleja una \
+					palidez propia de la desesperación más profunda… Tras hablar con él, me cuenta que ha habido un \
+					asesinato y nos disponemos a <a href='pasillohotel'>ir al hotel</a> y una vez allí detallar en \
+					profundidad sobre lo ocurrido.</p>"
+				}
+			}
+	),
+	
+	pasillohotel: new undum.SimpleSituation(
+		"<h1>HOTEL</h1>\
+		<img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
+		<p>Una vez, hemos llegado al hotel, nos disponemos a salir del taxi, que tenía cierto olor a cuadra, \
+		y te encuentras que la escena no tiene ese ambiente morboso típico de los asesinatos misteriosos.</p>\
+		<p>Junto con Elodín, atraviesas el rellano y el restaurante del Redfern hasta llegar a un pequeño pasillo \
+		que conecta con la cocina al fondo. Te acercas al grupito formado por los empleados del hotel en medio del \
+		pasillo. Algunos de ellos están conmocionados. Jade, la limpiadora, llora desconsoladamente de espaldas al \
+		resto, tapándose la cara con las manos.</p>\
+		<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
+		Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
+		casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+		<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
+		<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. Decides \
+		comenzar a interrogar a los empleados en el <a href='restaurante'>restaurante</a> que ha sido desalojado \
+		ante el asombro de los huéspedes.</p>"
+	),
+
+	restaurante: new undum.SimpleSituation(
+		"<h1>RESTAURANTE</h1>\
+		<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
+		y el <a href='./camarero' class='once'>camarero</a> esperan a que los llames.</p> <p>...</p>",
+
+		{
+			actions: {
+				"jim": "<img src='media/Imagenes/jim.png' class='float_right' width= 150px>\
+				<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un \
+				grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.\
+				</p>",
+
+				"antoine": "<img src='media/Imagenes/antoine.png' class='float_right' width= 150px>\
+				<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener \
+				cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, \
+				no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>",
+
+				"camarero": "<img src='media/Imagenes/bast.png' class='float_right' width= 150px>\
+				<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la \
+				cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos \
+				se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que \
+				hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba \
+				ahogando.</p>/"
+			}
+		}
+	),
 
 };
 
