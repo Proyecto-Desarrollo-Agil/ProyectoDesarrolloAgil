@@ -55,15 +55,18 @@ undum.game.situations = {
 		),
 
 		jim: new undum.SimpleSituation(
-"<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.</p>/"
+"<h1>Sala de entrevista</h1>\
+<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.</p>/"
 		),
 
 		antoine: new undum.SimpleSituation(
-"<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>/"
+"<h1>Sala de entrevista</h1>\
+<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p>/"
 		),
 		
 		camarero: new undum.SimpleSituation(
-"<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba ahogando.</p>/"
+"<h1>Sala de entrevista</h1>\
+<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba ahogando.</p>/"
 		),
 		
 
