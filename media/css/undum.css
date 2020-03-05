@@ -1,6 +1,7 @@
 body {
-    background: #162755 url("../Imagenes/fondo.jpg") repeat-x left top;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background: url("../Imagenes/fondo2.jpg") repeat;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    font-style: italic;
     font-size: 18px;
     line-height: 1.6em;
     background-attachment: fixed;
@@ -24,7 +25,7 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../Imagenes/titulo.jpg") repeat -1.1em -1.1em;
+    background: #e6e6c6 url("../Imagenes/titulo.jpg") repeat;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
     border: 1.1em solid rgba(0,0,0,0.25);
@@ -99,11 +100,14 @@ body {
 #content_wrapper {
     max-width: 28em;
     position: relative;
-    background: #e6e6c6 url("../Imagenes/texto.png") repeat left top;
+    background: #e6e6c6 url("../Imagenes/texto.jpg") repeat left top;
     margin: 0.6em auto 1.1em auto;
     padding: 2.8em;
     display: none; /* Shown by Javascript */
     overflow: auto;
+bfforder: rgba(212, 175, 55) 8px outset;
+border: black 30px solid;
+border-image-source: url("../Imagenes/marco.png");
 }
 span.drop + p {
     text-indent: -0.4em;
@@ -166,7 +170,7 @@ ul.options li:last-child {
 }
 
 h1 {
-    font-size: 1.0em;
+    font-size: 2.0em;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2.3em 0 1.1em 0;
@@ -213,8 +217,9 @@ img.float_left {
 }
 .tools {
     padding: 0.6em;
-    width: 8.9em;
+    width: 7.5em;
     background: #cec3ae url("../Imagenes/tool.jpg") repeat left top;
+    color: white;
     position: absolute;
 }
 .tools p {
@@ -232,6 +237,7 @@ img.float_left {
     font-weight: normal;
     border-bottom: 1px solid #321;
     margin-bottom: 0.6em;
+    color: white;
 }
 .buttons {
     padding-top: 0.6em;
