@@ -37,21 +37,26 @@ undum.game.situations = {
 			<br>\
 			<p><strong>De repente, el sonido del teléfono arrastra a nuestro protagonista fuera de sus \
 			pensamientos.</strong></p>\
-			<p class='transient' align='right'><a href='oficinaselitos'> -> </a></p>"
+			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>"
 		),
 
 	oficinaselitos: new undum.SimpleSituation(
+			
 			"<h1>La llamada</h1>\
 			<h2>Oficina</h2>\
-			<p>Fulminando el teléfono con la mirada no vas a conseguir mucho.\
-			<ul class='options'> <center>\
-            <li> <a href='./atender'>atender la llamada</a> </li>\
-            <li> <a href='./noatender'>no atender la llamada y seguir lamentando tu infelicidad.</a> </li>\
+			<p>Fulminando el teléfono con la mirada no vas a conseguir mucho.</p>\
+			<ul class='options' class='once'> <center>\
+            <li> <a href='llegada/atender'>atender la llamada</a> </li>\
+            <li> <a href='llegada/noatender'>no atender la llamada y seguir lamentando tu infelicidad.</a> </li>\
         	</center> </ul>\
         	</p>",
+	),
 
-        	{
-        		actions: {
+	llegada: new undum.SimpleSituation(
+			"",
+
+			{
+				actions: {
 					"atender": "<img class='img-situation' src='./media/Imagenes/detective.jpg'>\
 					<br>\
 					<p>...</p>\
@@ -65,7 +70,7 @@ undum.game.situations = {
 					periódico.</strong></p> \
 					<br>\
 					<p>Elodín te ha pedido que acudas cuanto antes. Decides prepararte y \
-					<a href='llegada/llegada1'>ponerte en camino hacia el hotel</a>, donde te recibirá Elodín, esperando que \
+					<a href='./llegada1' class='once'>ponerte en camino hacia el hotel</a>, donde te recibirá Elodín, esperando que \
 					puedas resolver este sorprendente caso. ¿Quién querría matar a alguien en el hotel con mayor \
 					prestigio de la ciudad?</p>/",
 
@@ -78,20 +83,11 @@ undum.game.situations = {
 					me visitaba precisamente para regalarme una estancia en su magnífico hotel.</p> \
 					<br>\
 					<p>En su cara se refleja una palidez propia de la desesperación más profunda… Tras hablar con él, \
-					me cuenta que ha habido un asesinato y nos disponemos a <a href='llegada/llegada2'>ir al hotel</a> para, una \
-					vez allí, detallar en profundidad sobre lo ocurrido.</p>"
-				}
-			}
-	),
+					me cuenta que ha habido un asesinato y nos disponemos a <a href='./llegada2' class='once'>ir al hotel</a> para, una \
+					vez allí, detallar en profundidad sobre lo ocurrido.</p>",
 
-
-
-	llegada: new undum.SimpleSituation(
-			"<h2>HOTEL</h2> <img class='img-situation' src='./media/Imagenes/hotel.jpg'>",
-
-			{
-				actions: {
-					"llegada1": "<p>Tras salir del taxi, que tenía cierto olor a cuadra, observas que, \
+					"llegada1": "<h2>Redfern</h2> <img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
+					<p>Tras salir del taxi, que tenía cierto olor a cuadra, observas que, \
 					al menos, el lugar no tiene aún ese ambiente morboso típico de los asesinatos \
 					misteriosos.</p>\
 					<br>\
@@ -99,7 +95,8 @@ undum.game.situations = {
 					<a href='pasillo/inicio'>ir un pasillo</a> que conecta con la cocina al final, atravesando la recepción y el \
 					restaurante del Redfern.</p>",
 
-					"llegada2": "<p>Tras un aparente eterno trayecto, salimos del taxi, que tenía cierto olor a cuadra, \
+					"llegada2": "<h2>Redfern</h2> <img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
+					<p>Tras un aparente eterno trayecto, salimos del taxi, que tenía cierto olor a cuadra, \
 					y sigues a Elodín, que se dirige al hotel. Observas que, al menos, el lugar no tiene aún ese ambiente \
 					morboso típico de los asesinatos \misteriosos.</p>\
 					<br>\
@@ -109,20 +106,19 @@ undum.game.situations = {
 			}
 	),
 
-
 	pasillo: new undum.SimpleSituation(
-			"<h2>Pasillo de cocina</h2>",
+			"",
         	{
         		actions: {
-        			"inicio":"<p> Te acercas al grupito formado por los empleados del hotel en medio del \
+        			"inicio":"<h2>Pasillo de cocina</h2><p> Te acercas al grupito formado por, lo que parece, los empleados del hotel en medio del \
 					pasillo. Algunos de ellos están conmocionados. </p>\
 					<br>\
-					<p>Jade, la limpiadora, llora desconsoladamente de espaldas al \
+					<p>La única mujer del grupo llora desconsoladamente de espaldas al \
 					resto, tapándose la cara con las manos.</p>\
 					<br>\
 					<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
 					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
-					casi cómica. El cuello estaba torcido en un ángulo extraño.</p>\
+					casi cómica.</p>\
 					<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
 					<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. \
 					</p>\
@@ -132,17 +128,99 @@ undum.game.situations = {
 		            interrogados individualmente.</a> </li>\
 		        	</center> </ul>",
 
-		        	"trascocina": "<p>Por escribir. <a href='restaurante/interrogar'>Pedir a todos los empleados que te acompañen al \
+		        	"trascocina": "<h2>Pasillo de cocina</h2><p><a href='restaurante/interrogar'>Pedir a todos los empleados que te acompañen al \
 		        	restaurante para ser interrogados invididualmente.</a></p>",
 
-        			"yainterrogados": "<p> Al volver todos al pasillo, os reunís con Elodín y la limpiadora, que seguían ahí, \
-        			como si su mera presencia fuera a revivir al chef.</p>\
+        			"yainterrogados": "<h2>Pasillo de cocina</h2><p> Al volver todos al pasillo, os reunís con Elodín y la mujer que lloraba, \
+        			que seguían ahí, como si su mera presencia fuera a revivir al chef.</p>\
 					<ul class='options'> <center>\
-		            <li> <a href='cocina/inicio'>ir a la cocina a investigar</a> </li>\
-		            <li> <a href='restaurante/inicio'>ir al restaurante.</a> </li>\
-		        	</center> </ul>"
+		            <li> <a href='pasillo2/elodin'>hablar con Elodín</a> </li>\
+		            <li> <a href='pasillo2/mujer'>hablar con la mujer</a> </li>\
+		        	</center> </ul>",
+
+		        	"jade": "<p> Esta vez, te reunes con Jade.</p>\
+		        	<br>\
+		        	<p>Al llegar antes, no habías reparado lo nerviosa que está.</p>\
+		        	<br>\
+		        	<p>La pobre se derrumba y, antes de tú abrir la boca, te confiesa que ella es inocente, pero que sospecha \
+		        	de Bast.</p>\
+		        	<br>\
+		        	<p>Últimamente, en casa, cada vez que salía el tema del trabajo y mencionaban a Bentley, Bast se ponía hecho \
+		        	un basilisco. Jade no lo reconocía, parecía otra persona...</p>\
+		        	<br>\
+		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
+		        	<br>\
+		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
+		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
+
+		        	"fin": "<h2>Pasillo de cocina</h2><p>Irrumpes en escena mientras que, con un movimiento más que estudiado, \
+		        	descubres tus esposas, las abres y te diriges a Bast. Antes de que nadie se de cuenta, lo tienes \
+		        	inmovilizado.</p>\
+		        	<br>\
+		        	<p>Si el camarero tiene algo que objetar, ya lo hará en comisaría.</p>\
+		        	<h1>Fin</h1>"
+					
+				}
+        	}
+	),
+
+	pasillo2: new undum.SimpleSituation(
+			"<h2>Pasillo de cocina</h2>",
+        	{
+        		actions: {
+        			"elodin": "<p> Discretamente, gesticulas a Elodín para que se reúna contigo en cerca de la entrada \
+		        	del restaurante, apartados del resto.</p>\
+		        	<br>\
+		        	<p>Le preguntas sobre la mujer que se había quedado a su lado mientras tu estabas fuera del pasillo.\
+		        	Te dice que se llama Jade y es una de las limpiadoras del Redfern. Es la esposa de Bast, el camarero.</p>\
+		        	<br>\
+		        	Ella estaba en su turno cuando ha ocurrido la tragedia y, como el resto de empleados, acabó por reunirse \
+		        	en el pasillo. </p>\
+		        	<br>\
+		        	<p>Volvéis con el grupo.</p>\
+		        	<br>\
+		        	<p class='transient'>Te propones <a href='pasillo/jade'>hablar con Jade</a></p>",
+		        	
+		        	"mujer": "<p> Esta vez, te reunes con la mujer.</p>\
+		        	<br>\
+		        	<p>Al llegar antes, no habías reparado lo nerviosa que está.</p>\
+		        	<br>\
+		        	<p>Nada más preguntarle su nombre, entre sollozos te dice que se llama Jade y la pobre se derrumba. Antes \
+		        	de tú abrir la boca, te confiesa que ella es inocente, pero que sospecha \
+		        	de Bast.</p>\
+		        	<br>\
+		        	<p>Últimamente, en casa, cada vez que salía el tema del trabajo y mencionaban a Bentley, Bast se ponía hecho \
+		        	un basilisco. Jade no lo reconocía, parecía otra persona...</p>\
+		        	<br>\
+		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
+		        	<br>\
+		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
+		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
+        		
         		}
         	}
+	),
+
+	saladeseguridad: new undum.SimpleSituation(
+			"<h2>Sala de seguridad</h2>",
+			{
+				actions: {
+					"inicio": "<p>Elodín se irrita al ver que, por algún motivo, las cámaras del pasillo \
+					de cocina no han registrado nada.</p>\
+					<br>\
+					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
+					conseguís dilucidar el misterio:</p>\
+					<br>\
+					<p>Pocos minutos después del mediodía de hoy, Bast entró a hurtadillas en la cocina y vació un frasquito \
+					en una de las dos tazas de café que había en una <strong>preciosa bandeja plateada</strong>. Seguidamente, \
+					salió de la cocina con la bandeja.</p>\
+					<br>\
+					<p>Sin siquiera explicar nada a Elodín, <a href='pasillo/fin'>regresas corriendo al pasillo </a>\
+					para arrestar a Bast.</p>"
+				}
+			}
 	),
 
 	restaurante: new undum.SimpleSituation(
@@ -150,16 +228,17 @@ undum.game.situations = {
 
 			{
 				actions: {
-					"inicio": "<p>Hasta aquí, colega. Te habia avisado de que no habia nada apenas.</p>",
-
-					"interrogar": "<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
-					y el <a href='./camarero' class='once'>camarero</a> esperan a que los llames para ser interrogados uno a uno.</p>\
+					"interrogar": "<p>Entras el primero para improvisar una sala de interrogatorio. Mientras ordenas los \
+					enseres de la estancia, ves una bandeja bañada en plata muy bonita.</p>\
+					<br>\
+					<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
+					y el <a href='./camarero' class='once'>camarero</a> entran al restaurante y esperan a que los llames para \
+					ser interrogados uno a uno.</p>\
 					<p class='transient'>Podéis <a href='pasillo/yainterrogados'>volver al pasillo</a> cuando decidas.</p> <br>",
 
 					"jim": "<img src='media/Imagenes/jim.png' class='float_right' width= 150px>\
 					<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un \
-					grito aterrador de Bast. Casi se cae al escurrirse con una mancha de un líquido viscoso en el suelo.\
-					</p> <br>",
+					grito aterrador de Bast.</p> <br>",
 
 					"antoine": "<img src='media/Imagenes/antoine.png' class='float_right' width= 150px>\
 					<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener \
@@ -171,19 +250,27 @@ undum.game.situations = {
 					cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos \
 					se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que \
 					hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba \
-					ahogando. <br></p>"
+					ahogando.</p> <br>"
 				}
 			}
 	),
-
 
 	cocina: new undum.SimpleSituation(
 			"<h2>COCINA</h2>",
 
 			{
 				actions: {
-					"inicio": "<p>Hasta aquí, colega. Te habia avisado de que no habia nada apenas. Prueba ir al restaurante \
-					si no lo has hecho aun. <a href='pasillo/trascocina'>Volver al pasillo</a></p>"
+					"inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
+					en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
+					conversaciones y sollozos que se cuelan desde el pasillo.</p>\
+					<br>\
+					<p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
+					por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
+					con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
+					<br>\
+					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
+					<br>\
+					<p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información.</p>"
 				}
 			}
 	)
