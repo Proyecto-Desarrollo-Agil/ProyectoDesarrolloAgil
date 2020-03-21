@@ -61,3 +61,12 @@ _______________________________
 
 ![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
 
+
+_______________________________
+Tablero de Trello con el Product Backlog:
+
+https://trello.com/b/5VYmQBPs/product-backlog
+
+Tablero de Trello con el Sprint Backlog:
+
+https://trello.com/b/8pLrQ6Y2/segundo-sprint-20-03-2020
