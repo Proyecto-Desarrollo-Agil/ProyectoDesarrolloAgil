@@ -40,7 +40,7 @@ undum.game.situations = {
 			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>",
 			{
                 	exit: function(character, system, to) {
-                		system.setQuality("progreso", character.qualities.progreso+1);
+                		system.setQuality("progreso", character.qualities.progreso+20);
                 	} 
         		  
 			}
