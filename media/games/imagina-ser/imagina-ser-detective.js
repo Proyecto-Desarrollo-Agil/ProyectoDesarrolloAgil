@@ -255,25 +255,41 @@ undum.game.situations = {
 			}
 	),
 
-	cocina: new undum.SimpleSituation(
-			"<h2>COCINA</h2>",
 
-			{
-				actions: {
-					"inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
-					en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
-					conversaciones y sollozos que se cuelan desde el pasillo.</p>\
-					<br>\
-					<p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
-					por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
-					con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
-					<br>\
-					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
-					<br>\
-					<p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información.</p>"
-				}
-			}
-	)
+	cocina: new undum.SimpleSituation(
+            "<h2>COCINA</h2>",
+
+            {
+                actions: {
+                    "inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
+                    en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
+                    conversaciones y sollozos que se cuelan desde el pasillo.</p>\
+                    <br>\
+                    <p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
+                    por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
+                    con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
+                    <br>\
+                    <p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
+                    <br>\
+                    <p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información \
+                    o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
+                }
+            }
+    ),
+    almacen: new undum.SimpleSituation(
+            "<h2>ALMACEN</h2>",
+
+            {
+                actions: {
+                    "inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
+                    y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
+                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
+                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p>"
+                }
+            }
+    )
+	
+						
 
 };
 
