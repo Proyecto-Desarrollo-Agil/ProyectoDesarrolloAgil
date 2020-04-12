@@ -1,12 +1,5 @@
-almacen: new undum.SimpleSituation(
-			"<h2>ALMACEN</h2>",
-
-			{
-				actions: {
-					"inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
-                    y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
-                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p>"
-				}
-			}
-	)
+Nueva situacion: Almacén
+Accion inicial:
+Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
+no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda volver al pasillo para ver 
+si se puede conseguir algo de pistas para este extraño caso.
