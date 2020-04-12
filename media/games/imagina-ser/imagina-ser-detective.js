@@ -303,7 +303,23 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    
+    skill: new undum.IntegerQuality(
+        "Skill", {priority:"0001", group:'stats'}
+    ),
+    stamina: new undum.NumericQuality(
+        "Stamina", {priority:"0002", group:'stats'}
+    ),
+    luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
+        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
+        {priority:"0003", group:'stats'}
+    ),
+
+    inspiration: new undum.NonZeroIntegerQuality(
+        "Inspiration", {priority:"0001", group:'progress'}
+    ),
+    novice: new undum.OnOffQuality(
+        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
+    )
 };
 
 // ---------------------------------------------------------------------------
@@ -313,12 +329,20 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-   
+    stats: new undum.QualityGroup(null, {priority:"0001"}),
+    progress: new undum.QualityGroup('Progress', {priority:"0002"})
+
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-   
+    character.qualities.skill = 12;
+    character.qualities.stamina = 12;
+    character.qualities.luck = 0;
+    character.qualities.novice = 1;
+    character.qualities.inspiration = 0;
+    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
+
 };
