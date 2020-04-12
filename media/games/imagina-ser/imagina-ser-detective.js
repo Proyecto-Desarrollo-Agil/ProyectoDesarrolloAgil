@@ -255,41 +255,25 @@ undum.game.situations = {
 			}
 	),
 
-
 	cocina: new undum.SimpleSituation(
-            "<h2>COCINA</h2>",
+			"<h2>COCINA</h2>",
 
-            {
-                actions: {
-                    "inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
-                    en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
-                    conversaciones y sollozos que se cuelan desde el pasillo.</p>\
-                    <br>\
-                    <p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
-                    por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
-                    con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
-                    <br>\
-                    <p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
-                    <br>\
-                    <p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información \
-                    o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
-                }
-            }
-    ),
-    almacen: new undum.SimpleSituation(
-            "<h2>ALMACEN</h2>",
-
-            {
-                actions: {
-                    "inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
-                    y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
-                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p>"
-                }
-            }
-    )
-	
-						
+			{
+				actions: {
+					"inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
+					en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
+					conversaciones y sollozos que se cuelan desde el pasillo.</p>\
+					<br>\
+					<p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
+					por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
+					con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
+					<br>\
+					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
+					<br>\
+					<p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información.</p>"
+				}
+			}
+	)
 
 };
 
@@ -303,23 +287,9 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
+     progreso: new undum.IntegerQuality(
+        "Progreso sobre 100%", {priority:"0001", group:'stats'}
     ),
-    stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
-    ),
-    luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
-        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
-        {priority:"0003", group:'stats'}
-    ),
-
-    inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
-    ),
-    novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
-    )
 };
 
 // ---------------------------------------------------------------------------
@@ -329,20 +299,13 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-    stats: new undum.QualityGroup(null, {priority:"0001"}),
-    progress: new undum.QualityGroup('Progress', {priority:"0002"})
-
+     stats: new undum.QualityGroup(null, {priority:"0001"}),
+  
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
-    character.qualities.luck = 0;
-    character.qualities.novice = 1;
-    character.qualities.inspiration = 0;
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
-
+    character.qualities.progreso = 0; 
 };
