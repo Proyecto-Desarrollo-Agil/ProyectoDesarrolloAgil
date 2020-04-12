@@ -37,7 +37,13 @@ undum.game.situations = {
 			<br>\
 			<p><strong>De repente, el sonido del teléfono arrastra a nuestro protagonista fuera de sus \
 			pensamientos.</strong></p>\
-			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>"
+			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>",
+			{
+                	exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+1);
+                	} 
+        		  
+			}
 		),
 
 	oficinaselitos: new undum.SimpleSituation(
