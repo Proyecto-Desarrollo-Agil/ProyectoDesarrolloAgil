@@ -56,6 +56,12 @@ undum.game.situations = {
             <li> <a href='llegada/noatender'>no atender la llamada y seguir lamentando tu infelicidad.</a> </li>\
         	</center> </ul>\
         	</p>",
+			{
+                	exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+                	} 
+        		  
+			}
 	),
 
 	llegada: new undum.SimpleSituation(
@@ -107,8 +113,12 @@ undum.game.situations = {
 					morboso típico de los asesinatos \misteriosos.</p>\
 					<br>\
 					<p>Junto con el director, atraviesas la recepción y el restaurante del Redfern hasta  \
-					<a href='pasillo/inicio'>llegar a un pasillo</a> que conecta con la cocina al fondo.</p>"
-				}
+					<a href='pasillo/inicio'>llegar a un pasillo</a> que conecta con la cocina al fondo.</p>",
+					
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
 			}
 	),
 
@@ -167,7 +177,10 @@ undum.game.situations = {
 		        	<p>Si el camarero tiene algo que objetar, ya lo hará en comisaría.</p>\
 		        	<h1>Fin</h1>"
 					
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
         	}
 	),
 
@@ -205,7 +218,10 @@ undum.game.situations = {
 		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
-        		}
+        		},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
         	}
 	),
 
@@ -225,7 +241,10 @@ undum.game.situations = {
 					<br>\
 					<p>Sin siquiera explicar nada a Elodín, <a href='pasillo/fin'>regresas corriendo al pasillo </a>\
 					para arrestar a Bast.</p>"
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
 			}
 	),
 
@@ -257,7 +276,10 @@ undum.game.situations = {
 					se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que \
 					hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba \
 					ahogando.</p> <br>"
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
 			}
 	),
 
@@ -277,7 +299,10 @@ undum.game.situations = {
 					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
 					<br>\
 					<p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información.</p>"
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+            }
 			}
 	)
 
