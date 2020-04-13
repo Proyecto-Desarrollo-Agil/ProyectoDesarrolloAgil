@@ -59,13 +59,13 @@ _______________________________
 
 ## Sprint 2 (13/04)
 
-**Product Owner: ** Miguel Ángel Carpio Colomo.
+**Product Owner:** Miguel Ángel Carpio Colomo.
 
 Debido a que nuestro grupo tuvimos una confusión y en el sprint 0 ya comenzamos con el desarrollo del juego en este sprint hemos continuado con el punto de donde lo dejamos:
 
 **Captura Sprint Backlog antes de la Product Backlog Refinement**
-![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura1.PNG)
-2.2
+![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.2.PNG)
+
 - **Requisito 1:** Dado que en el sprint pasado ya realizamos 5 situaciones, quedando un total de 8 situaciones; en este hemos decidido añadir 1 situación más para que de esta forma el juego ya cuente con el requisito inngegociable de tener al menos 9 situaciones
 - **Requisito 2:** Para que las situaciones creadas tengan sentido y estén conectadas correctamente necesitaremos que el jugador pueda moverse a través de ellas por lo que es un requisito básico con respecto al anterior
 - **Requisito 3:** Este es un requisito que no es opcional dentro de la práctica, sin embargo hemos decidido incorporarlo pues ayuda al usuario a hacerse una idea más correcta de la situación en ese momento y además no requería demasiado esfuerzo por lo tanto era un requisito que nos compensaba incorporar.
@@ -77,20 +77,20 @@ _______________________________
 
 Captura de la descomposición de tareas al inicio del Sprint
 
-![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
-2.3
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.3.PNG)
+
 _______________________________
 
 #### Captura del Product Backlog tras Product Backlog Refinement
 
-![captura3](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.PNG)
-2.4
+![captura3](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.4.PNG)
+
 _______________________________
 
 #### Captura del Sprint Backlog tras Product Backlog Refinement
 
-![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
-2.1
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.1.PNG)
+
 
 **Observaciones:** Como se puede observar el requisito número 5 ha desaparecido pues fue asignado al miembro del grupo Alberto Cabrera pero finalmente hemos tenido problemas en ese aspecto con él y no fue realizado por su parte. Por lo que decidimos cambiarlo mejor al siguiente Sprint
 _______________________________
@@ -104,8 +104,8 @@ _______________________________
 
 #### Captura del Sprint Backlog y Sprint Planning
 
-![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
-2.5
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.5.PNG)
+
 
 _______________________________
 Tablero de Trello con el Product Backlog:
