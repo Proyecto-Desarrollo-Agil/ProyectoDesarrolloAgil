@@ -28,6 +28,7 @@ undum.game.situations = {
 			otra falda más corta.</p>\
 			<br>\
 			<p>Otro día más comiendo en la oficina...</p>\
+                        <img class='img-situation' src='./media/Imagenes/detective1.jpg'>\
 			<br>\
 			<p>A sus 35 años, Selitos llevaba ya un tiempo viendo como su pasión por el oficio empezaba a \
 			perderse. No os confundais, seguía entregado a su trabajo, como el primer día cuando abrió su \
@@ -37,7 +38,14 @@ undum.game.situations = {
 			<br>\
 			<p><strong>De repente, el sonido del teléfono arrastra a nuestro protagonista fuera de sus \
 			pensamientos.</strong></p>\
-			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>"
+			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>",
+			{
+                	exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+                	} 
+        		  
+			}
 		),
 
 	oficinaselitos: new undum.SimpleSituation(
@@ -45,11 +53,19 @@ undum.game.situations = {
 			"<h1>La llamada</h1>\
 			<h2>Oficina</h2>\
 			<p>Fulminando el teléfono con la mirada no vas a conseguir mucho.</p>\
+                        <img class='img-situation' src='./media/Imagenes/oficinaselites2.jpg'>\
 			<ul class='options' class='once'> <center>\
             <li> <a href='llegada/atender'>atender la llamada</a> </li>\
             <li> <a href='llegada/noatender'>no atender la llamada y seguir lamentando tu infelicidad.</a> </li>\
         	</center> </ul>\
         	</p>",
+			{
+                	exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+                	} 
+        		  
+			}
 	),
 
 	llegada: new undum.SimpleSituation(
@@ -101,8 +117,13 @@ undum.game.situations = {
 					morboso típico de los asesinatos \misteriosos.</p>\
 					<br>\
 					<p>Junto con el director, atraviesas la recepción y el restaurante del Redfern hasta  \
-					<a href='pasillo/inicio'>llegar a un pasillo</a> que conecta con la cocina al fondo.</p>"
-				}
+					<a href='pasillo/inicio'>llegar a un pasillo</a> que conecta con la cocina al fondo.</p>",
+					
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
 			}
 	),
 
@@ -161,7 +182,11 @@ undum.game.situations = {
 		        	<p>Si el camarero tiene algo que objetar, ya lo hará en comisaría.</p>\
 		        	<h1>Fin</h1>"
 					
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
         	}
 	),
 
@@ -177,6 +202,7 @@ undum.game.situations = {
 		        	<br>\
 		        	Ella estaba en su turno cuando ha ocurrido la tragedia y, como el resto de empleados, acabó por reunirse \
 		        	en el pasillo. </p>\
+                                <img class='img-situation' src='./media/Imagenes/pasillo2.jpg'>\
 		        	<br>\
 		        	<p>Volvéis con el grupo.</p>\
 		        	<br>\
@@ -199,7 +225,11 @@ undum.game.situations = {
 		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
-        		}
+        		},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
         	}
 	),
 
@@ -212,6 +242,7 @@ undum.game.situations = {
 					<br>\
 					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
 					conseguís dilucidar el misterio:</p>\
+                                        <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>\
 					<br>\
 					<p>Pocos minutos después del mediodía de hoy, Bast entró a hurtadillas en la cocina y vació un frasquito \
 					en una de las dos tazas de café que había en una <strong>preciosa bandeja plateada</strong>. Seguidamente, \
@@ -219,7 +250,11 @@ undum.game.situations = {
 					<br>\
 					<p>Sin siquiera explicar nada a Elodín, <a href='pasillo/fin'>regresas corriendo al pasillo </a>\
 					para arrestar a Bast.</p>"
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
 			}
 	),
 
@@ -234,6 +269,7 @@ undum.game.situations = {
 					<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
 					y el <a href='./camarero' class='once'>camarero</a> entran al restaurante y esperan a que los llames para \
 					ser interrogados uno a uno.</p>\
+                                        <img class='img-situation' src='./media/Imagenes/restaurante.jpg'>\
 					<p class='transient'>Podéis <a href='pasillo/yainterrogados'>volver al pasillo</a> cuando decidas.</p> <br>",
 
 					"jim": "<img src='media/Imagenes/jim.png' class='float_right' width= 150px>\
@@ -251,29 +287,55 @@ undum.game.situations = {
 					se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que \
 					hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba \
 					ahogando.</p> <br>"
-				}
+				},
+				exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
 			}
 	),
 
 	cocina: new undum.SimpleSituation(
-			"<h2>COCINA</h2>",
+            "<h2>COCINA</h2>",
 
-			{
-				actions: {
-					"inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
-					en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
-					conversaciones y sollozos que se cuelan desde el pasillo.</p>\
-					<br>\
-					<p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
-					por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
-					con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
-					<br>\
-					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
-					<br>\
-					<p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información.</p>"
-				}
-			}
-	)
+            {
+                actions: {
+                    "inicio": "<p>Como el resto de las estancias del hotel por las que has pasado y salvo en el pasillo, \
+                    en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
+                    conversaciones y sollozos que se cuelan desde el pasillo.</p>\
+                    <br>\
+                    <p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
+                    por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
+                    con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
+                    <br>\
+                    <p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
+                    <br>\
+                    <p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información \
+                    o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
+                },
+		exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
+            }
+    ),
+    almacen: new undum.SimpleSituation(
+            "<h2>ALMACEN</h2>",
+
+            {
+                actions: {
+                    "inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
+                    y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
+                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
+                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
+		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>"
+                },
+		exit: function(character, system, to) {
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            }
+            }
+    )
 
 };
 
@@ -287,7 +349,12 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    
+     progreso: new undum.IntegerQuality(
+        "Progreso sobre 100%", {priority:"0001", group:'stats'}
+    ),
+    total: new undum.IntegerQuality(
+        "Conversion en dias", {priority:"0001", group:'stats'}
+    ),	
 };
 
 // ---------------------------------------------------------------------------
@@ -297,12 +364,15 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-   
+     stats: new undum.QualityGroup(null, {priority:"0001"}),
+  
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-   
+    character.qualities.progreso = 0; 
+    character.qualities.total = 0; 
+    
 };
