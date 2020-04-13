@@ -52,6 +52,7 @@ undum.game.situations = {
 			"<h1>La llamada</h1>\
 			<h2>Oficina</h2>\
 			<p>Fulminando el teléfono con la mirada no vas a conseguir mucho.</p>\
+                        <img class='img-situation' src='./media/Imagenes/oficinaselites2.jpg'>\
 			<ul class='options' class='once'> <center>\
             <li> <a href='llegada/atender'>atender la llamada</a> </li>\
             <li> <a href='llegada/noatender'>no atender la llamada y seguir lamentando tu infelicidad.</a> </li>\
