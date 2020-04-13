@@ -28,6 +28,7 @@ undum.game.situations = {
 			otra falda más corta.</p>\
 			<br>\
 			<p>Otro día más comiendo en la oficina...</p>\
+                        <img class='img-situation' src='./media/Imagenes/detective1.jpg'>\
 			<br>\
 			<p>A sus 35 años, Selitos llevaba ya un tiempo viendo como su pasión por el oficio empezaba a \
 			perderse. No os confundais, seguía entregado a su trabajo, como el primer día cuando abrió su \
