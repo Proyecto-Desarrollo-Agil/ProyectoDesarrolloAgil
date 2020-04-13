@@ -57,10 +57,55 @@ _______________________________
 
 _______________________________
 
+## Sprint 2 (13/04)
+
+**Product Owner: ** Miguel Ángel Carpio Colomo.
+
+Debido a que nuestro grupo tuvimos una confusión y en el sprint 0 ya comenzamos con el desarrollo del juego en este sprint hemos continuado con el punto de donde lo dejamos:
+
+**Captura Sprint Backlog antes de la Product Backlog Refinement**
+![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura1.PNG)
+2.2
+- **Requisito 1:** Dado que en el sprint pasado ya realizamos 5 situaciones, quedando un total de 8 situaciones; en este hemos decidido añadir 1 situación más para que de esta forma el juego ya cuente con el requisito inngegociable de tener al menos 9 situaciones
+- **Requisito 2:** Para que las situaciones creadas tengan sentido y estén conectadas correctamente necesitaremos que el jugador pueda moverse a través de ellas por lo que es un requisito básico con respecto al anterior
+- **Requisito 3:** Este es un requisito que no es opcional dentro de la práctica, sin embargo hemos decidido incorporarlo pues ayuda al usuario a hacerse una idea más correcta de la situación en ese momento y además no requería demasiado esfuerzo por lo tanto era un requisito que nos compensaba incorporar.
+- **Requisito 4:** Este requisito es uno innegociable de la práctica y por tanto en este Sprint hemos decidido centrarnos en él pues suponía algo que no teníamos mucha idea de cómo empezarlo y sabíamos que le íbamos que dedicar algo más de tiempo
+- **Requisito 5:** En este caso este requisito en un principio lo queríamos incorporar para este Sprint pues lo considerábamos bastante interesante y podía complementar muy bien a la historia que tenemos en este momento.
+_______________________________
+
+#### Captura de las HU descompuestas en tareas
+
+Captura de la descomposición de tareas al inicio del Sprint
+
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
+2.3
+_______________________________
+
+#### Captura del Product Backlog tras Product Backlog Refinement
+
+![captura3](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.PNG)
+2.4
+_______________________________
+
+#### Captura del Sprint Backlog tras Product Backlog Refinement
+
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
+2.1
+
+**Observaciones:** Como se puede observar el requisito número 5 ha desaparecido pues fue asignado al miembro del grupo Alberto Cabrera pero finalmente hemos tenido problemas en ese aspecto con él y no fue realizado por su parte. Por lo que decidimos cambiarlo mejor al siguiente Sprint
+_______________________________
+
+-**Conclusiones Sprint Review:** Hemos continuado con la forma de organización de los anteriores Sprint, es decir, organizando las HU para ese sprint en otro tablero distinto en Trello y ahí mismo gestionar todas las tareas necesarias para completar esas HU. En este Sprint partimos de la base de querer implementar los 5 requisitos que se observan en la primera captura de pantalla de este Sprint, finalmente no ha sido posible implementarlos todos, por lo que al final se han quedado en 4 requisitos. Como se menciona en el siguiente apartado, el principal problema que hemos tenido ha sido el del miembro del grupo Alberto que no sabemos muy bien que ha ocurrido con él para no dar señales de vida... pero ante tal situación decidimos dejar de lado las tareas que tenía asociadas porque ya era demasiado tarde para incorporarlas y hacer nuestra parte. Por otro lado, el Rol de Product Owner ha sido tomado por mi parte (Miguel Ángel Carpio Colomo) que me he encargado personalmente de administrar en su mayoría que todas las tareas fuesen realizadas de la mejor manera posible, acorde a la situación actúal y al tiempo que teníamos, por ello, en cuanto a programación no he tocado mucho, sino que esa labor se ha llevado a cabo principalmente entre Jose Manuel y Antonio.
+
+-**Conclusiones Sprint Retrospective:** En este Sprint hemos tenido más dificultades que en el pasado Sprint pues dada la situación que vivimos actualmente de confinamiento, el realizar las diferentes reuniones y organizarnos es un poco complejo... Además también hemos tenido problemas con el compañero del grupo Alberto Cabrera pues a pesar de tener un grupo de WhatsApp creado y hablar por él, intentar ponernos en contacto con él numerosas veces, no hemos conseguido tener una respuesta por su parte... por lo que el trabajo se nos dificultó aún más. No por ello, los demas compañeros (Miguel Ángel, Jose Manuel y Antonio) hemos estado haciendo lo posible para intentar llevarlo al día y en general nosotros hemos trabajado correctamente, y todas las tareas que teníamos asignadas han sido completadas con éxito y en un tiempo bastante productivo. Para el siguiente Sprint hemos decidido seguir los 3 de la misma forma que hemos trabajado en este Sprint e intentar ver si Alberto da algún tipo de señal de interés o algo por el estilo, de lo contrario, al igual que en este caso, lo realizaremos únicamente entre los 3
+
+_______________________________
+
+
 #### Captura del Sprint Backlog y Sprint Planning
 
 ![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura2.PNG)
-
+2.5
 
 _______________________________
 Tablero de Trello con el Product Backlog:
@@ -69,4 +114,4 @@ https://trello.com/b/5VYmQBPs/product-backlog
 
 Tablero de Trello con el Sprint Backlog:
 
-https://trello.com/b/8pLrQ6Y2/segundo-sprint-20-03-2020
+https://trello.com/b/P6KbMcYQ/tercer-sprint-13-04-2020
