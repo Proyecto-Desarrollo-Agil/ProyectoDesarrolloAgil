@@ -237,6 +237,7 @@ undum.game.situations = {
 					<br>\
 					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
 					conseguís dilucidar el misterio:</p>\
+                                        <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>\
 					<br>\
 					<p>Pocos minutos después del mediodía de hoy, Bast entró a hurtadillas en la cocina y vació un frasquito \
 					en una de las dos tazas de café que había en una <strong>preciosa bandeja plateada</strong>. Seguidamente, \
