@@ -263,6 +263,7 @@ undum.game.situations = {
 					<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
 					y el <a href='./camarero' class='once'>camarero</a> entran al restaurante y esperan a que los llames para \
 					ser interrogados uno a uno.</p>\
+                                        <img class='img-situation' src='./media/Imagenes/restaurante.jpg'>\
 					<p class='transient'>Podéis <a href='pasillo/yainterrogados'>volver al pasillo</a> cuando decidas.</p> <br>",
 
 					"jim": "<img src='media/Imagenes/jim.png' class='float_right' width= 150px>\
