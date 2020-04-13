@@ -198,6 +198,7 @@ undum.game.situations = {
 		        	<br>\
 		        	Ella estaba en su turno cuando ha ocurrido la tragedia y, como el resto de empleados, acabó por reunirse \
 		        	en el pasillo. </p>\
+                                <img class='img-situation' src='./media/Imagenes/pasillo2.jpg'>\
 		        	<br>\
 		        	<p>Volvéis con el grupo.</p>\
 		        	<br>\
