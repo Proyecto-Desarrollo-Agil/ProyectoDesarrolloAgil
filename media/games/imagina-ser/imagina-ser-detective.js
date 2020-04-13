@@ -300,6 +300,7 @@ undum.game.situations = {
 					<p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
 					por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
 					con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
+                                        <img class='img-situation' src='./media/Imagenes/cocina.jpg'>\
 					<br>\
 					<p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
 					<br>\
