@@ -139,7 +139,7 @@ undum.game.situations = {
 					<br>\
 					<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
 					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
-					casi cómica.</p>\
+					casi cómica.Justo al lado del mismo, observas <a href='./veneno'> unas gotas de veneno</a> </p>\
 					<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
 					<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. \
 					</p>\
@@ -183,6 +183,14 @@ undum.game.situations = {
 		        	<h1>Fin</h1>"
 					
 				},
+
+				'veneno': function(character, system, action) {
+			         system.setQuality( "veneno", true );
+				},				
+
+
+
+	
 				exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
@@ -326,14 +334,15 @@ undum.game.situations = {
                 actions: {
                     "inicio": function enter( character, system, action ){
 			system.setQuality( "llave", true );
-			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./antorcha'>pila de alimentos</a> amontonados \
+			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
                     no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
                     <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
-		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>");
+		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
-		'antorcha': function(character, system, action) {
-			system.setQuality( "antorcha", true );
+		'cadena': function(character, system, action) {
+			system.setQuality( "cadena", true );
+			system.write("<p> Encuentras una cadena de oro con la inicial de E, sospechoso cuanto menos..., habrá que investigarlo...</p>");
 
 		},
 		exit: function(character, system, to) {
@@ -363,12 +372,16 @@ undum.game.qualities = {
     total: new undum.IntegerQuality(
         "Conversion en dias", {priority:"0001", group:'stats'}
     ),
-    antorcha: new undum.OnOffQuality(
-        "Antorcha", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    cadena: new undum.OnOffQuality(
+        "Cadena", {priority:"0001", group:'pistas', onDisplay:"&#10003;"}
     ),
 	  llave: new undum.OnOffQuality(
-        "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
-    )	
+        "Llave", {priority:"0002", group:'pistas', onDisplay:"&#10003;"}
+    ),
+	veneno: new undum.OnOffQuality(
+        "Gota de Veneno", {priority:"0003", group:'pistas', onDisplay:"&#10003;"}
+    ),
+		
 };
 
 // ---------------------------------------------------------------------------
@@ -379,7 +392,7 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
      stats: new undum.QualityGroup(null, {priority:"0001"}),
-     inventario: new undum.QualityGroup('Inventario', {priority:"0001"})
+     pistas: new undum.QualityGroup('Pistas', {priority:"0001"})
      
   
 };
@@ -390,7 +403,9 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {   
     character.qualities.progreso = 0; 
     character.qualities.total = 0; 
-    system.setQuality( "antorcha" , true);
+    system.setQuality( "cadena" , false);
     system.setQuality( "llave" , false);
+    system.setQuality( "veneno" , false);
+
     
 };
