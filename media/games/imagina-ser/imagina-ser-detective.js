@@ -324,17 +324,25 @@ undum.game.situations = {
 
             {
                 actions: {
-                    "inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
+                    "inicio": function enter( character, system, action ){
+			system.setQuality( "llave", true );
+			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./antorcha'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
                     no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
                     <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
-		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>"
+		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>");
                 },
+		'antorcha': function(character, system, action) {
+			system.setQuality( "antorcha", true );
+
+		},
 		exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
-            }
-            }
+		}
+		
+            
+          }}
     )
 
 };
@@ -354,7 +362,13 @@ undum.game.qualities = {
     ),
     total: new undum.IntegerQuality(
         "Conversion en dias", {priority:"0001", group:'stats'}
-    ),	
+    ),
+    antorcha: new undum.OnOffQuality(
+        "Antorcha", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	  llave: new undum.OnOffQuality(
+        "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+    )	
 };
 
 // ---------------------------------------------------------------------------
@@ -365,14 +379,18 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
      stats: new undum.QualityGroup(null, {priority:"0001"}),
+     inventario: new undum.QualityGroup('Inventario', {priority:"0001"})
+     
   
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
-undum.game.init = function(character, system) {
+undum.game.init = function(character, system) {   
     character.qualities.progreso = 0; 
     character.qualities.total = 0; 
+    system.setQuality( "antorcha" , true);
+    system.setQuality( "llave" , false);
     
 };
