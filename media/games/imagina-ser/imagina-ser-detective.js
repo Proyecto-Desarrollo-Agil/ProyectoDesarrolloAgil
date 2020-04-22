@@ -1,4 +1,4 @@
-ï»¿// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 // Edit this file to define your game. It should have at least four
 // sets of content: undum.game.situations, undum.game.start,
 // undum.game.qualities, and undum.game.init.
@@ -15,28 +15,28 @@ undum.game.id = "89353480-ec80-11e1-aff1-0800200c9a66"; // GEnerado por http://w
  * prevents Undum from trying to load the saved-game and crashing. */
 undum.game.version = "1.0";
 
-// En modo depuraciÃ³n, que no haya efectos de jquery
+// En modo depuración, que no haya efectos de jquery
 jQuery.fx.off=false
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-			"<p>Vago, inteligente y cabezÃ³n. Si hay que describir a Selitos con la mayor cortedad posible, \
-			esa definiciÃ³n le queda como un guante. Y como si nos hubiera oÃ­do hablar de Ã©l y de su \
-			terquedad, se ha pasado toda la maÃ±ana del domingo encerrado en su oficina. Obstinado. \
-			Maquinando cÃ³mo convencer a Paqui, con la enÃ©sima prueba, de que su Antonio no estÃ¡ persiguiendo \
-			otra falda mÃ¡s corta.</p>\
+			"<p>Vago, inteligente y cabezón. Si hay que describir a Selitos con la mayor cortedad posible, \
+			esa definición le queda como un guante. Y como si nos hubiera oído hablar de él y de su \
+			terquedad, se ha pasado toda la mañana del domingo encerrado en su oficina. Obstinado. \
+			Maquinando cómo convencer a Paqui, con la enésima prueba, de que su Antonio no está persiguiendo \
+			otra falda más corta.</p>\
 			<br>\
-			<p>Otro dÃ­a mÃ¡s comiendo en la oficina...</p>\
+			<p>Otro día más comiendo en la oficina...</p>\
                         <img class='img-situation' src='./media/Imagenes/detective1.jpg'>\
 			<br>\
-			<p>A sus 35 aÃ±os, Selitos llevaba ya un tiempo viendo como su pasiÃ³n por el oficio empezaba a \
-			perderse. No os confundais, seguÃ­a entregado a su trabajo, como el primer dÃ­a cuando abriÃ³ su \
-			gabinete, pero cada vez que descolgaba el telÃ©fono, volvÃ­a los ojos en blanco ante una mutaciÃ³n \
+			<p>A sus 35 años, Selitos llevaba ya un tiempo viendo como su pasión por el oficio empezaba a \
+			perderse. No os confundais, seguía entregado a su trabajo, como el primer día cuando abrió su \
+			gabinete, pero cada vez que descolgaba el teléfono, volvía los ojos en blanco ante una mutación \
 			del mismo caso de siempre. No esperaba enfrentarse todas las semanas ante un episodio a la altura \
-			de Sherlock Holmes, pero en el fondo sÃ­ lo ansiaba. Aunque solo fuera una vez. </p>\
+			de Sherlock Holmes, pero en el fondo sí lo ansiaba. Aunque solo fuera una vez. </p>\
 			<br>\
-			<p><strong>De repente, el sonido del telÃ©fono arrastra a nuestro protagonista fuera de sus \
+			<p><strong>De repente, el sonido del teléfono arrastra a nuestro protagonista fuera de sus \
 			pensamientos.</strong></p>\
 			<p align='right' class='transient'><a href='oficinaselitos'>-></a></p>",
 			{
@@ -52,7 +52,7 @@ undum.game.situations = {
 			
 			"<h1>La llamada</h1>\
 			<h2>Oficina</h2>\
-			<p>Fulminando el telÃ©fono con la mirada no vas a conseguir mucho.</p>\
+			<p>Fulminando el teléfono con la mirada no vas a conseguir mucho.</p>\
                         <img class='img-situation' src='./media/Imagenes/oficinaselites2.jpg'>\
 			<ul class='options' class='once'> <center>\
             <li> <a href='llegada/atender'>atender la llamada</a> </li>\
@@ -78,45 +78,45 @@ undum.game.situations = {
 					<p>...</p>\
 					<br>\
 					<p>Tras colgar, te das cuenta de que no es un caso corriente. Al otro lado \
-					del auricular se encontraba ElodÃ­n, director del hotel Redfern. Muy a tu pesar, no ha \
+					del auricular se encontraba Elodín, director del hotel Redfern. Muy a tu pesar, no ha \
 					llamado para invitarte a pasar unos dias de vacaciones en su lujoso hotel, sino que ha \
 					ocurrido un asesinato.</p>\
 					<br>\
 					<p><strong>El caso que iba a poner tu nombre en la portada del \
-					periÃ³dico.</strong></p> \
+					periódico.</strong></p> \
 					<br>\
-					<p>ElodÃ­n te ha pedido que acudas cuanto antes. Decides prepararte y \
-					<a href='./llegada1' class='once'>ponerte en camino hacia el hotel</a>, donde te recibirÃ¡ ElodÃ­n, esperando que \
-					puedas resolver este sorprendente caso. Â¿QuiÃ©n querrÃ­a matar a alguien en el hotel con mayor \
+					<p>Elodín te ha pedido que acudas cuanto antes. Decides prepararte y \
+					<a href='./llegada1' class='once'>ponerte en camino hacia el hotel</a>, donde te recibirá Elodín, esperando que \
+					puedas resolver este sorprendente caso. ¿Quién querría matar a alguien en el hotel con mayor \
 					prestigio de la ciudad?</p>/",
 
 					"noatender": "<img class='img-situation' src='./media/Imagenes/mirandoelmovil.jpg'>\
-					<p>Ignoras el ruido del aparato hasta que, tras cuatro llamadas mÃ¡s, te deja tranquilo.</p>\
+					<p>Ignoras el ruido del aparato hasta que, tras cuatro llamadas más, te deja tranquilo.</p>\
 					<br>\
 					<p>Al rato, un par de golpes secos en la puerta te sacan de tu ensimismamiento \
-					y, mientras te levantas para abrir, piensas: Â¿QuiÃ©n viene un domingo a las 3 de la tarde? Al \
-					abrir, te encuentras con que, para tu sorpresa, es ElodÃ­n, director del hotel Redfern, y no \
-					me visitaba precisamente para regalarme una estancia en su magnÃ­fico hotel.</p> \
+					y, mientras te levantas para abrir, piensas: ¿Quién viene un domingo a las 3 de la tarde? Al \
+					abrir, te encuentras con que, para tu sorpresa, es Elodín, director del hotel Redfern, y no \
+					me visitaba precisamente para regalarme una estancia en su magnífico hotel.</p> \
 					<br>\
-					<p>En su cara se refleja una palidez propia de la desesperaciÃ³n mÃ¡s profundaâ€¦ Tras hablar con Ã©l, \
+					<p>En su cara se refleja una palidez propia de la desesperación más profunda… Tras hablar con él, \
 					me cuenta que ha habido un asesinato y nos disponemos a <a href='./llegada2' class='once'>ir al hotel</a> para, una \
-					vez allÃ­, detallar en profundidad sobre lo ocurrido.</p>",
+					vez allí, detallar en profundidad sobre lo ocurrido.</p>",
 
 					"llegada1": "<h2>Redfern</h2> <img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
-					<p>Tras salir del taxi, que tenÃ­a cierto olor a cuadra, observas que, \
-					al menos, el lugar no tiene aÃºn ese ambiente morboso tÃ­pico de los asesinatos \
+					<p>Tras salir del taxi, que tenía cierto olor a cuadra, observas que, \
+					al menos, el lugar no tiene aún ese ambiente morboso típico de los asesinatos \
 					misteriosos.</p>\
 					<br>\
-					<p>Entras con brÃ­o al hotel y encuentras a ElodÃ­n, solo en el hall. El director te insta a \
-					<a href='pasillo/inicio'>ir un pasillo</a> que conecta con la cocina al final, atravesando la recepciÃ³n y el \
+					<p>Entras con brío al hotel y encuentras a Elodín, solo en el hall. El director te insta a \
+					<a href='pasillo/inicio'>ir un pasillo</a> que conecta con la cocina al final, atravesando la recepción y el \
 					restaurante del Redfern.</p>",
 
 					"llegada2": "<h2>Redfern</h2> <img class='img-situation' src='./media/Imagenes/hotel.jpg'>\
-					<p>Tras un aparente eterno trayecto, salimos del taxi, que tenÃ­a cierto olor a cuadra, \
-					y sigues a ElodÃ­n, que se dirige al hotel. Observas que, al menos, el lugar no tiene aÃºn ese ambiente \
-					morboso tÃ­pico de los asesinatos \misteriosos.</p>\
+					<p>Tras un aparente eterno trayecto, salimos del taxi, que tenía cierto olor a cuadra, \
+					y sigues a Elodín, que se dirige al hotel. Observas que, al menos, el lugar no tiene aún ese ambiente \
+					morboso típico de los asesinatos \misteriosos.</p>\
 					<br>\
-					<p>Junto con el director, atraviesas la recepciÃ³n y el restaurante del Redfern hasta  \
+					<p>Junto con el director, atraviesas la recepción y el restaurante del Redfern hasta  \
 					<a href='pasillo/inicio'>llegar a un pasillo</a> que conecta con la cocina al fondo.</p>",
 					
 				},
@@ -132,54 +132,54 @@ undum.game.situations = {
         	{
         		actions: {
         			"inicio":"<h2>Pasillo de cocina</h2><p> Te acercas al grupito formado por, lo que parece, los empleados del hotel en medio del \
-					pasillo. Algunos de ellos estÃ¡n conmocionados. </p>\
+					pasillo. Algunos de ellos están conmocionados. </p>\
 					<br>\
-					<p>La Ãºnica mujer del grupo llora desconsoladamente de espaldas al \
-					resto, tapÃ¡ndose la cara con las manos.</p>\
+					<p>La única mujer del grupo llora desconsoladamente de espaldas al \
+					resto, tapándose la cara con las manos.</p>\
 					<br>\
 					<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
-					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posiciÃ³n extraÃ±a, \
-					casi cÃ³mica.</p>\
+					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
+					casi cómica.</p>\
 					<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
-					<p>Como te habÃ­a explicado el director minutos antes, la vÃ­ctima es el cocinero del hotel, Bentley. \
+					<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. \
 					</p>\
 					<ul class='options'> <center>\
 		            <li> <a href='cocina/inicio'>ir a la cocina a investigar</a> </li>\
-		            <li> <a href='restaurante/interrogar'>pedir a todos los empleados que te acompaÃ±en al restaurante para ser \
+		            <li> <a href='restaurante/interrogar'>pedir a todos los empleados que te acompañen al restaurante para ser \
 		            interrogados individualmente.</a> </li>\
 		        	</center> </ul>",
 
-		        	"trascocina": "<h2>Pasillo de cocina</h2><p><a href='restaurante/interrogar'>Pedir a todos los empleados que te acompaÃ±en al \
+		        	"trascocina": "<h2>Pasillo de cocina</h2><p><a href='restaurante/interrogar'>Pedir a todos los empleados que te acompañen al \
 		        	restaurante para ser interrogados invididualmente.</a></p>",
 
-        			"yainterrogados": "<h2>Pasillo de cocina</h2><p> Al volver todos al pasillo, os reunÃ­s con ElodÃ­n y la mujer que lloraba, \
-        			que seguÃ­an ahÃ­, como si su mera presencia fuera a revivir al chef.</p>\
+        			"yainterrogados": "<h2>Pasillo de cocina</h2><p> Al volver todos al pasillo, os reunís con Elodín y la mujer que lloraba, \
+        			que seguían ahí, como si su mera presencia fuera a revivir al chef.</p>\
 					<ul class='options'> <center>\
-		            <li> <a href='pasillo2/elodin'>hablar con ElodÃ­n</a> </li>\
+		            <li> <a href='pasillo2/elodin'>hablar con Elodín</a> </li>\
 		            <li> <a href='pasillo2/mujer'>hablar con la mujer</a> </li>\
 		        	</center> </ul>",
 
 		        	"jade": "<p> Esta vez, te reunes con Jade.</p>\
 		        	<br>\
-		        	<p>Al llegar antes, no habÃ­as reparado lo nerviosa que estÃ¡.</p>\
+		        	<p>Al llegar antes, no habías reparado lo nerviosa que está.</p>\
 		        	<br>\
-		        	<p>La pobre se derrumba y, antes de tÃº abrir la boca, te confiesa que ella es inocente, pero que sospecha \
+		        	<p>La pobre se derrumba y, antes de tú abrir la boca, te confiesa que ella es inocente, pero que sospecha \
 		        	de Bast.</p>\
 		        	<br>\
-		        	<p>Ãšltimamente, en casa, cada vez que salÃ­a el tema del trabajo y mencionaban a Bentley, Bast se ponÃ­a hecho \
-		        	un basilisco. Jade no lo reconocÃ­a, parecÃ­a otra persona...</p>\
+		        	<p>Últimamente, en casa, cada vez que salía el tema del trabajo y mencionaban a Bentley, Bast se ponía hecho \
+		        	un basilisco. Jade no lo reconocía, parecía otra persona...</p>\
 		        	<br>\
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
-		        	<p>Tienes claro tu siguiente movimiento. Le pides a ElodÃ­n que te lleve de inmediato a la\
+		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
 		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
-		        	donde se puede revisar en directo las cÃ¡maras repartidas por las zonas comunes del hotel.</p>",
+		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
 
-		        	"fin": "<h2>Pasillo de cocina</h2><p>Irrumpes en escena mientras que, con un movimiento mÃ¡s que estudiado, \
+		        	"fin": "<h2>Pasillo de cocina</h2><p>Irrumpes en escena mientras que, con un movimiento más que estudiado, \
 		        	descubres tus esposas, las abres y te diriges a Bast. Antes de que nadie se de cuenta, lo tienes \
 		        	inmovilizado.</p>\
 		        	<br>\
-		        	<p>Si el camarero tiene algo que objetar, ya lo harÃ¡ en comisarÃ­a.</p>\
+		        	<p>Si el camarero tiene algo que objetar, ya lo hará en comisaría.</p>\
 		        	<h1>Fin</h1>"
 					
 				},
@@ -194,36 +194,36 @@ undum.game.situations = {
 			"<h2>Pasillo de cocina</h2>",
         	{
         		actions: {
-        			"elodin": "<p> Discretamente, gesticulas a ElodÃ­n para que se reÃºna contigo en cerca de la entrada \
+        			"elodin": "<p> Discretamente, gesticulas a Elodín para que se reúna contigo en cerca de la entrada \
 		        	del restaurante, apartados del resto.</p>\
 		        	<br>\
-		        	<p>Le preguntas sobre la mujer que se habÃ­a quedado a su lado mientras tu estabas fuera del pasillo.\
+		        	<p>Le preguntas sobre la mujer que se había quedado a su lado mientras tu estabas fuera del pasillo.\
 		        	Te dice que se llama Jade y es una de las limpiadoras del Redfern. Es la esposa de Bast, el camarero.</p>\
 		        	<br>\
-		        	Ella estaba en su turno cuando ha ocurrido la tragedia y, como el resto de empleados, acabÃ³ por reunirse \
+		        	Ella estaba en su turno cuando ha ocurrido la tragedia y, como el resto de empleados, acabó por reunirse \
 		        	en el pasillo. </p>\
                                 <img class='img-situation' src='./media/Imagenes/pasillo2.jpg'>\
 		        	<br>\
-		        	<p>VolvÃ©is con el grupo.</p>\
+		        	<p>Volvéis con el grupo.</p>\
 		        	<br>\
 		        	<p class='transient'>Te propones <a href='pasillo/jade'>hablar con Jade</a></p>",
 		        	
 		        	"mujer": "<p> Esta vez, te reunes con la mujer.</p>\
 		        	<br>\
-		        	<p>Al llegar antes, no habÃ­as reparado lo nerviosa que estÃ¡.</p>\
+		        	<p>Al llegar antes, no habías reparado lo nerviosa que está.</p>\
 		        	<br>\
-		        	<p>Nada mÃ¡s preguntarle su nombre, entre sollozos te dice que se llama Jade y la pobre se derrumba. Antes \
-		        	de tÃº abrir la boca, te confiesa que ella es inocente, pero que sospecha \
+		        	<p>Nada más preguntarle su nombre, entre sollozos te dice que se llama Jade y la pobre se derrumba. Antes \
+		        	de tú abrir la boca, te confiesa que ella es inocente, pero que sospecha \
 		        	de Bast.</p>\
 		        	<br>\
-		        	<p>Ãšltimamente, en casa, cada vez que salÃ­a el tema del trabajo y mencionaban a Bentley, Bast se ponÃ­a hecho \
-		        	un basilisco. Jade no lo reconocÃ­a, parecÃ­a otra persona...</p>\
+		        	<p>Últimamente, en casa, cada vez que salía el tema del trabajo y mencionaban a Bentley, Bast se ponía hecho \
+		        	un basilisco. Jade no lo reconocía, parecía otra persona...</p>\
 		        	<br>\
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
-		        	<p>Tienes claro tu siguiente movimiento. Le pides a ElodÃ­n que te lleve de inmediato a la\
+		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
 		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
-		        	donde se puede revisar en directo las cÃ¡maras repartidas por las zonas comunes del hotel.</p>",
+		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
         		},
 				exit: function(character, system, to) {
@@ -237,18 +237,18 @@ undum.game.situations = {
 			"<h2>Sala de seguridad</h2>",
 			{
 				actions: {
-					"inicio": "<p>ElodÃ­n se irrita al ver que, por algÃºn motivo, las cÃ¡maras del pasillo \
+					"inicio": "<p>Elodín se irrita al ver que, por algún motivo, las cámaras del pasillo \
 					de cocina no han registrado nada.</p>\
 					<br>\
-					<p>Tras comprobar los archivos de vÃ­deo de las cÃ¡maras de la cocina, \
-					conseguÃ­s dilucidar el misterio:</p>\
+					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
+					conseguís dilucidar el misterio:</p>\
                                         <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>\
 					<br>\
-					<p>Pocos minutos despuÃ©s del mediodÃ­a de hoy, Bast entrÃ³ a hurtadillas en la cocina y vaciÃ³ un frasquito \
-					en una de las dos tazas de cafÃ© que habÃ­a en una <strong>preciosa bandeja plateada</strong>. Seguidamente, \
-					saliÃ³ de la cocina con la bandeja.</p>\
+					<p>Pocos minutos después del mediodía de hoy, Bast entró a hurtadillas en la cocina y vació un frasquito \
+					en una de las dos tazas de café que había en una <strong>preciosa bandeja plateada</strong>. Seguidamente, \
+					salió de la cocina con la bandeja.</p>\
 					<br>\
-					<p>Sin siquiera explicar nada a ElodÃ­n, <a href='pasillo/fin'>regresas corriendo al pasillo </a>\
+					<p>Sin siquiera explicar nada a Elodín, <a href='pasillo/fin'>regresas corriendo al pasillo </a>\
 					para arrestar a Bast.</p>"
 				},
 				exit: function(character, system, to) {
@@ -264,28 +264,28 @@ undum.game.situations = {
 			{
 				actions: {
 					"interrogar": "<p>Entras el primero para improvisar una sala de interrogatorio. Mientras ordenas los \
-					enseres de la estancia, ves una bandeja baÃ±ada en plata muy bonita.</p>\
+					enseres de la estancia, ves una bandeja bañada en plata muy bonita.</p>\
 					<br>\
-					<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maÃ®tre</a> \
+					<p><a href='./jim' class='once'>El botones</a>, <a href='./antoine' class='once'>el maître</a> \
 					y el <a href='./camarero' class='once'>camarero</a> entran al restaurante y esperan a que los llames para \
 					ser interrogados uno a uno.</p>\
                                         <img class='img-situation' src='./media/Imagenes/restaurante.jpg'>\
-					<p class='transient'>PodÃ©is <a href='pasillo/yainterrogados'>volver al pasillo</a> cuando decidas.</p> <br>",
+					<p class='transient'>Podéis <a href='pasillo/yainterrogados'>volver al pasillo</a> cuando decidas.</p> <br>",
 
 					"jim": "<img src='media/Imagenes/jim.png' class='float_right' width= 150px>\
-					<p>Jim, el botones, no sabe nada de lo sucedido. LlegÃ³ corriendo al pasillo cuando oyÃ³ un \
+					<p>Jim, el botones, no sabe nada de lo sucedido. Llegó corriendo al pasillo cuando oyó un \
 					grito aterrador de Bast.</p> <br>",
 
 					"antoine": "<img src='media/Imagenes/antoine.png' class='float_right' width= 150px>\
-					<p>Antoine, el maÃ®tre parece mÃ¡s contrariado por el retraso que suponÃ­a el no tener \
-					cocinero que el hecho de que haya muerto. Para una vez que Bast no habÃ­a llegado tarde a su turno, \
-					no habÃ­an podido dejar listo el restaurante a tiempo para la hora de la comida.</p> <br>",
+					<p>Antoine, el maître parece más contrariado por el retraso que suponía el no tener \
+					cocinero que el hecho de que haya muerto. Para una vez que Bast no había llegado tarde a su turno, \
+					no habían podido dejar listo el restaurante a tiempo para la hora de la comida.</p> <br>",
 
 					"camarero": "<img src='media/Imagenes/bast.png' class='float_right' width= 150px>\
-					<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigÃ­a a la \
+					<p>El camarero, visiblemente afectado, te cuenta que, como de costumbre, se dirigía a la \
 					cocina para ayudar a preparar el restaurante antes de que empezara su turno a las 13:30. Lo que menos \
 					se esperaba era encontrarse a Bentley tirado en el suelo, convulsionando. Tras gritar, lo primero que \
-					hizo fue intentar socorrer al cocinero, poniÃ©ndolo de lado y sacÃ¡ndole la lengua por si se estaba \
+					hizo fue intentar socorrer al cocinero, poniéndolo de lado y sacándole la lengua por si se estaba \
 					ahogando.</p> <br>"
 				},
 				exit: function(character, system, to) {
@@ -304,14 +304,14 @@ undum.game.situations = {
                     en la cocina reina un silencio artificial, compuesto por la ausencia de personal y solo roto por las \
                     conversaciones y sollozos que se cuelan desde el pasillo.</p>\
                     <br>\
-                    <p>No ves nada extraÃ±o. La estancia estÃ¡ todo lo ordenada que podÃ­a estar antes de suspender el trabajo \
-                    por la trÃ¡gica muerte de Bentley: hay platos y cuberterÃ­a a medio lavar, una olla en el fuego\
-                    con comida ya destemplada, etc. AquÃ­ han estado trabajando hasta el Ãºltimo momento. </p>\
+                    <p>No ves nada extraño. La estancia está todo lo ordenada que podía estar antes de suspender el trabajo \
+                    por la trágica muerte de Bentley: hay platos y cubertería a medio lavar, una olla en el fuego\
+                    con comida ya destemplada, etc. Aquí han estado trabajando hasta el último momento. </p>\
                     <br>\
-                    <p>Lo Ãºnico que hay en su sitio es el cuenco del azÃºcar, que esta donde debe.</p>\
+                    <p>Lo único que hay en su sitio es el cuenco del azúcar, que esta donde debe.</p>\
                     <br>\
-                    <p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar mÃ¡s informaciÃ³n \
-                    o <a href='almacen/inicio'>dirigirte al almacÃ©n</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
+                    <p>Decides <a href='pasillo/trascocina'>volver al pasillo</a> para recabar más información \
+                    o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
                 },
 		exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
@@ -328,8 +328,8 @@ undum.game.situations = {
 			system.setQuality( "llave", true );
 			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./antorcha'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraÃ±o... solamente te queda \
-                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraÃ±o caso.</p> \
+                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
+                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
 		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>");
                 },
 		'antorcha': function(character, system, action) {
@@ -390,7 +390,7 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {   
     character.qualities.progreso = 0; 
     character.qualities.total = 0; 
-    system.setQuality( "antorcha" , true);
+    system.setQuality( "antorcha" , false);
     system.setQuality( "llave" , false);
     
 };
