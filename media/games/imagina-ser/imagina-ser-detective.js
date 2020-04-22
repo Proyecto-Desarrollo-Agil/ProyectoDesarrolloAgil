@@ -184,17 +184,14 @@ undum.game.situations = {
 					
 				},
 
-				'veneno': function(character, system, action) {
-			         system.setQuality( "veneno", true );
-				},				
-
-
-
-	
 				exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
-            }
+            			},
+
+				'veneno': function(character, system, action) {
+			         system.setQuality( "veneno", true );
+				}
         	}
 	),
 
@@ -230,14 +227,18 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, sin embargo mientras caminas observas unas <a href='./veneno'> gotas de veneno </a> \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
         		},
 				exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
-            }
+            			},
+
+				'veneno': function(character, system, action) {
+			         system.setQuality( "veneno", true );
+				}
         	}
 	),
 
@@ -336,7 +337,7 @@ undum.game.situations = {
 			system.setQuality( "llave", true );
 			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
+                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, todo esto es demasiado extraño... solamente te queda \
                     <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
 		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
@@ -348,7 +349,10 @@ undum.game.situations = {
 		exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
-		}
+		},
+		'veneno': function(character, system, action) {
+			         system.setQuality( "veneno", true );
+		},
 		
             
           }}
