@@ -190,8 +190,8 @@ undum.game.situations = {
             			},
 
 				'veneno': function(character, system, action) {
-			         system.setQuality( "veneno", true );
-				}
+			         	system.setQuality( "veneno", true );
+				},
         	}
 	),
 
@@ -337,7 +337,7 @@ undum.game.situations = {
 			system.setQuality( "llave", true );
 			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, todo esto es demasiado extraño... solamente te queda \
+                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, excepto una <a href ='./llave'>llave</a> que había por allí, todo esto 		    es demasiado extraño...                     solamente te queda \
                     <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
 		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
@@ -353,7 +353,9 @@ undum.game.situations = {
 		'veneno': function(character, system, action) {
 			         system.setQuality( "veneno", true );
 		},
-		
+		'llave': function(character, system, action) {
+				 system.setQuality( "llave", true );
+		},
             
           }}
     )
