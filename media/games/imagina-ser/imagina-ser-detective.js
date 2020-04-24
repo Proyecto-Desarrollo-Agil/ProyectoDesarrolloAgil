@@ -227,7 +227,7 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, sin embargo mientras caminas observas unas <a href='./veneno'> gotas de veneno </a> \
+		        	<a href='sala'>sala de seguridad</a>, sin embargo mientras caminas observas unas <a href='./veneno'> gotas de veneno </a> \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
         		},
@@ -241,6 +241,24 @@ undum.game.situations = {
 				}
         	}
 	),
+
+	sala: new undum.SimpleSituation(
+			
+			
+			"<h2>Sala de seguridad</h2>\
+			<p>Aquí se podrá ver todo lo que a sucedido en el hotel, todo el mundo que a entrado y salido, y se registrarán todos los datos.</p>\
+                        </p>",
+
+			{
+			enter: function( character, system, from ){
+				if(character.qualities.llave){
+					system.doLink('saladeseguridad/inicio');
+				}
+			}
+			}
+			
+	),
+
 
 	saladeseguridad: new undum.SimpleSituation(
 			"<h2>Sala de seguridad</h2>",
@@ -355,6 +373,9 @@ undum.game.situations = {
 		},
 		'llave': function(character, system, action) {
 				 system.setQuality( "llave", true );
+				 /* system.write("<p> Perfecto. Ahora tienes una llave con la que podrás abrir la sala de seguridad.
+</p>");
+ */
 		},
             
           }}
@@ -381,7 +402,7 @@ undum.game.qualities = {
     cadena: new undum.OnOffQuality(
         "Cadena", {priority:"0001", group:'pistas', onDisplay:"&#10003;"}
     ),
-	  llave: new undum.OnOffQuality(
+    llave: new undum.OnOffQuality(
         "Llave", {priority:"0002", group:'pistas', onDisplay:"&#10003;"}
     ),
 	veneno: new undum.OnOffQuality(
