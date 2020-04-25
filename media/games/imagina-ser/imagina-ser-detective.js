@@ -42,6 +42,7 @@ undum.game.situations = {
 			{
                 	exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
 				system.setQuality("total", character.qualities.progreso/24);
                 	} 
         		  
@@ -62,6 +63,7 @@ undum.game.situations = {
 			{
                 	exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
 				system.setQuality("total", character.qualities.progreso/24);
                 	} 
         		  
@@ -122,6 +124,7 @@ undum.game.situations = {
 				},
 				exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
 				system.setQuality("total", character.qualities.progreso/24);
             }
 			}
@@ -185,6 +188,7 @@ undum.game.situations = {
 				},
 
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             			},
@@ -228,6 +232,7 @@ undum.game.situations = {
         		
         		},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             			},
@@ -243,7 +248,13 @@ undum.game.situations = {
 					} else {
 						system.doLink( 'saladeseguridad2');
 					}
-				}
+				},
+			
+				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("total", character.qualities.progreso/24);
+            			},
 			}
 			
 	),
@@ -276,6 +287,7 @@ undum.game.situations = {
 					para arrestar a Bast.</p>"
 				},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -313,6 +325,7 @@ undum.game.situations = {
 					ahogando.</p> <br>"
 				},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -338,6 +351,7 @@ undum.game.situations = {
                     o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
                 },
 		exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -362,6 +376,7 @@ undum.game.situations = {
 
 		},
 		exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
 		},
