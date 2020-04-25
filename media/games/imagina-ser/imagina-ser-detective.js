@@ -172,7 +172,7 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	<a href='sala'>sala de seguridad</a>, \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
 
 		        	"fin": "<h2>Pasillo de cocina</h2><p>Irrumpes en escena mientras que, con un movimiento más que estudiado, \
@@ -243,29 +243,34 @@ undum.game.situations = {
 	),
 
 	sala: new undum.SimpleSituation(
-			
-			
-			"<h2>Sala de seguridad</h2>\
-			<p>Aquí se podrá ver todo lo que a sucedido en el hotel, todo el mundo que a entrado y salido, y se registrarán todos los datos.</p>\
-                        </p>",
+
 
 			{
-			enter: function( character, system, from ){
-				if(character.qualities.llave){
-					system.doLink('saladeseguridad/inicio');
+				enter:function( character, system, from ) {
+					if( character.qualities.llave ) {
+						system.doLink( 'saladeseguridad/inicio');
+					} else {
+						system.doLink( 'saladeseguridad2');
+					}
 				}
-			}
 			}
 			
 	),
 
+	saladeseguridad2: new undum.SimpleSituation(
+
+	"<h2>Sala de seguridad</h2> \
+	<p>Cuando llegas a la sala de seguridad, se encuentra cerrada y parece ser que Elodín se hace un poco el tonto como quien no sabe nada... \
+	extraño cuanto menos... pues habrá que buscar esa llave sea como sea, es en ese momento cuando recuerdas que no has entrado al <a href='almacen/inicio'> almacén </a>y que \
+	probablemente ese sea el único sitio donde no has investigado</p>"
+	),
 
 	saladeseguridad: new undum.SimpleSituation(
 			"<h2>Sala de seguridad</h2>",
 			{
 				actions: {
 					"inicio": "<p>Elodín se irrita al ver que, por algún motivo, las cámaras del pasillo \
-					de cocina no han registrado nada.</p>\
+					de cocina no han registrado nada. holaaaaa</p>\
 					<br>\
 					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
 					conseguís dilucidar el misterio:</p>\
@@ -355,8 +360,8 @@ undum.game.situations = {
 			system.setQuality( "llave", true );
 			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, excepto una <a href ='./llave'>llave</a> que había por allí, todo esto 		    es demasiado extraño...                     solamente te queda \
-                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
+                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, excepto una  llave que había por allí, todo esto es demasiado extraño... \
+                    <a href='sala'>volver a la sala de seguridad </a> , intentar abrir esa puerta para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
 		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
 		'cadena': function(character, system, action) {
@@ -373,8 +378,7 @@ undum.game.situations = {
 		},
 		'llave': function(character, system, action) {
 				 system.setQuality( "llave", true );
-				 /* system.write("<p> Perfecto. Ahora tienes una llave con la que podrás abrir la sala de seguridad.
-</p>");
+				 /* system.write("<p> Perfecto. Ahora tienes una llave con la que podrás abrir la sala de seguridad.</p>");
  */
 		},
             
