@@ -243,8 +243,7 @@ undum.game.situations = {
 	),
 
 	sala: new undum.SimpleSituation(
-
-
+		"<h1>Sala de seguridad</h1>",
 			{
 				enter:function( character, system, from ) {
 					if( character.qualities.llave ) {
