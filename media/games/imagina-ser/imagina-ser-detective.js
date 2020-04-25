@@ -139,7 +139,7 @@ undum.game.situations = {
 					<br>\
 					<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
 					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
-					casi cómica.Justo al lado del mismo, observas <a href='./veneno'> unas gotas de veneno</a> </p>\
+					casi cómica. </p>\
 					<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
 					<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. \
 					</p>\
@@ -188,10 +188,6 @@ undum.game.situations = {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             			},
-
-				'veneno': function(character, system, action) {
-			         	system.setQuality( "veneno", true );
-				},
         	}
 	),
 
@@ -227,7 +223,7 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='sala'>sala de seguridad</a>, sin embargo mientras caminas observas unas <a href='./veneno'> gotas de veneno </a> \
+		        	<a href='sala'>sala de seguridad</a> \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
         		},
@@ -235,10 +231,6 @@ undum.game.situations = {
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             			},
-
-				'veneno': function(character, system, action) {
-			         system.setQuality( "veneno", true );
-				}
         	}
 	),
 
@@ -359,13 +351,13 @@ undum.game.situations = {
 			system.setQuality( "llave", true );
 			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte <a href='./veneno'>sospechoso</a>, excepto una  llave que había por allí, todo esto es demasiado extraño... \
+                    consigues divisar una cosa que te resulta <a href='./veneno'>sospechoso</a>, excepto una  llave que había por allí, todo esto es demasiado extraño... \
                     <a href='sala'>volver a la sala de seguridad </a> , intentar abrir esa puerta para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
 		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
 		'cadena': function(character, system, action) {
 			system.setQuality( "cadena", true );
-			system.write("<p> Encuentras una cadena de oro con la inicial de E, sospechoso cuanto menos..., habrá que investigarlo...</p>");
+			system.write("<p> Vaya...¡qué sorpresa!, rebuscando entre esa pila de alimentos aparece encuentras una cadena de oro con la inicial de E, sospechoso cuanto menos..., habrá que investigarlo...</p>");
 
 		},
 		exit: function(character, system, to) {
@@ -374,11 +366,7 @@ undum.game.situations = {
 		},
 		'veneno': function(character, system, action) {
 			         system.setQuality( "veneno", true );
-		},
-		'llave': function(character, system, action) {
-				 system.setQuality( "llave", true );
-				 /* system.write("<p> Perfecto. Ahora tienes una llave con la que podrás abrir la sala de seguridad.</p>");
- */
+				 system.write("<p> ¡¡¡Y tan sospechoso!!! son unas gotas del veneno con el que fue asesinado la víctima, todo esto va cobrando sentido. </p>");
 		},
             
           }}
