@@ -418,7 +418,7 @@ undum.game.qualities = {
         "Porcentaje", {priority:"0001", group:'stats'}
     ),	
     progreso: new undum.IntegerQuality(
-        "Progreso sobre 100%", {priority:"0001", group:'stats'}
+        "Horas dedicadas en el caso", {priority:"0001", group:'stats'}
     ),
     total: new undum.IntegerQuality(
         "Conversion en dias", {priority:"0001", group:'stats'}
