@@ -165,7 +165,7 @@ _______________________________
 
 #### Captura del Sprint Backlog y Sprint Planning
 
-![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.5.PNG)
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.6.PNG)
 
 
 _______________________________
