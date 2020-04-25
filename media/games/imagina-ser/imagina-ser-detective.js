@@ -411,17 +411,18 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    contador: new undum.IntegerQuality(
-        "Total de situaciones visitadas(Maximo 13)", {priority:"0001", group:'stats'}
-    ),
-    porcentaje: new undum.IntegerQuality(
-        "Porcentaje", {priority:"0001", group:'stats'}
-    ),	
+	
     progreso: new undum.IntegerQuality(
         "Horas dedicadas en el caso", {priority:"0001", group:'stats'}
     ),
     total: new undum.IntegerQuality(
         "Conversion en dias", {priority:"0001", group:'stats'}
+    ),
+        contador: new undum.IntegerQuality(
+        "Total de situaciones visitadas(Maximo 13)", {priority:"0001", group:'stats'}
+    ),
+    porcentaje: new undum.IntegerQuality(
+        "Porcentaje de situaciones vistas", {priority:"0001", group:'stats'}
     ),
     cadena: new undum.OnOffQuality(
         "Cadena", {priority:"0001", group:'pistas', onDisplay:"&#10003;"}
