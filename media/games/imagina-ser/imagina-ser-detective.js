@@ -385,6 +385,9 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
+     contador: new undum.IntegerQuality(
+        "Contador de salas visitadas", {priority:"0001", group:'stats'}
+    ),
      progreso: new undum.IntegerQuality(
         "Progreso sobre 100%", {priority:"0001", group:'stats'}
     ),
@@ -420,6 +423,7 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {   
+    character.qualities.contador = 0;     
     character.qualities.progreso = 0; 
     character.qualities.total = 0; 
     system.setQuality( "cadena" , false);
