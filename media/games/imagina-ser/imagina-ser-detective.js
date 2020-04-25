@@ -42,6 +42,9 @@ undum.game.situations = {
 			{
                 	exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);				
+				
 				system.setQuality("total", character.qualities.progreso/24);
                 	} 
         		  
@@ -62,6 +65,8 @@ undum.game.situations = {
 			{
                 	exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
 				system.setQuality("total", character.qualities.progreso/24);
                 	} 
         		  
@@ -122,6 +127,8 @@ undum.game.situations = {
 				},
 				exit: function(character, system, to) {
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
 				system.setQuality("total", character.qualities.progreso/24);
             }
 			}
@@ -139,7 +146,7 @@ undum.game.situations = {
 					<br>\
 					<p>De manera instintiva, comienzas a analizar la escena con una prolijidad solo equiparable a tu experiencia. \
 					Te abres paso entre los presentes y observas que hay un cuerpo inerte, boca arriba. Tiene una posición extraña, \
-					casi cómica.</p>\
+					casi cómica. </p>\
 					<img class='img-situation' src='./media/Imagenes/asesinado.jpg'>\
 					<p>Como te había explicado el director minutos antes, la víctima es el cocinero del hotel, Bentley. \
 					</p>\
@@ -172,7 +179,7 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	<a href='sala'>sala de seguridad</a>, \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
 
 		        	"fin": "<h2>Pasillo de cocina</h2><p>Irrumpes en escena mientras que, con un movimiento más que estudiado, \
@@ -183,10 +190,13 @@ undum.game.situations = {
 		        	<h1>Fin</h1>"
 					
 				},
+
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
 				system.setQuality("total", character.qualities.progreso/24);
-            }
+            			},
         	}
 	),
 
@@ -222,15 +232,47 @@ undum.game.situations = {
 		        	<p>Antes de que la pobre se vuelva a derrumbar, decides dejar de presionarla.</p>\
 		        	<br>\
 		        	<p>Tienes claro tu siguiente movimiento. Le pides a Elodín que te lleve de inmediato a la\
-		        	<a href='saladeseguridad/inicio'>sala de seguridad</a>, \
+		        	<a href='sala'>sala de seguridad</a> \
 		        	donde se puede revisar en directo las cámaras repartidas por las zonas comunes del hotel.</p>",
         		
         		},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
                 		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
 				system.setQuality("total", character.qualities.progreso/24);
-            }
+            			},
         	}
+	),
+
+	sala: new undum.SimpleSituation(
+		"<h1>Sala de seguridad</h1>",
+			{
+				enter:function( character, system, from ) {
+					if( character.qualities.llave ) {
+						system.doLink( 'saladeseguridad/inicio');
+					} else {
+						system.doLink( 'saladeseguridad2');
+					}
+				},
+			
+				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+                		system.setQuality("progreso", character.qualities.progreso+20);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
+				system.setQuality("total", character.qualities.progreso/24);
+            			},
+			}
+			
+	),
+
+	saladeseguridad2: new undum.SimpleSituation(
+
+	"<h2>Sala de seguridad</h2> \
+	<img class='img-situation' src='./media/Imagenes/cerrado.jpg'> \
+	<p>Cuando llegas a la sala de seguridad, se encuentra cerrada y parece ser que Elodín se hace un poco el tonto como quien no sabe nada... \
+	extraño cuanto menos... pues habrá que buscar esa llave sea como sea, es en ese momento cuando recuerdas que no has entrado al <a href='almacen/inicio'> almacén </a>y que \
+	probablemente ese sea el único sitio donde no has investigado</p>"
 	),
 
 	saladeseguridad: new undum.SimpleSituation(
@@ -238,7 +280,7 @@ undum.game.situations = {
 			{
 				actions: {
 					"inicio": "<p>Elodín se irrita al ver que, por algún motivo, las cámaras del pasillo \
-					de cocina no han registrado nada.</p>\
+					de cocina no han registrado nada. holaaaaa</p>\
 					<br>\
 					<p>Tras comprobar los archivos de vídeo de las cámaras de la cocina, \
 					conseguís dilucidar el misterio:</p>\
@@ -252,6 +294,8 @@ undum.game.situations = {
 					para arrestar a Bast.</p>"
 				},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -289,6 +333,8 @@ undum.game.situations = {
 					ahogando.</p> <br>"
 				},
 				exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -314,6 +360,8 @@ undum.game.situations = {
                     o <a href='almacen/inicio'>dirigirte al almacén</a> que se encuentra justo en una puerta a la derecha de los fogones</p>"
                 },
 		exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
             }
@@ -324,17 +372,31 @@ undum.game.situations = {
 
             {
                 actions: {
-                    "inicio": "<p>Entras al almacen y lo unico que se puede observar es una pila de alimentos amontonados \
+                    "inicio": function enter( character, system, action ){
+			system.setQuality( "llave", true );
+			system.write("<p>Entras al almacen y lo unico que se puede observar es una <a href='./cadena'>pila de alimentos</a> amontonados \
                     y que bueno un poco sucio para un hotel de tan suma calidad como lo es este. Pero bueno, al caso, \
-                    no consigues divisar nada que te resulte sospechoso, todo esto es demasiado extraño... solamente te queda \
-                    <a href='pasillo/trascocina'>volver al pasillo</a> para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
-		    <img class='img-situation' src='./media/Imagenes/saladeseguridad.jpg'>"
+                    consigues divisar una cosa que te resulta <a href='./veneno'>sospechoso</a>, excepto una  llave que había por allí, todo esto es demasiado extraño... \
+                    <a href='sala'>volver a la sala de seguridad </a> , intentar abrir esa puerta para ver si se puede conseguir algo de pistas para este extraño caso.</p> \
+		    <img class='img-situation' src='./media/Imagenes/almacen.jpg'>");
                 },
+		'cadena': function(character, system, action) {
+			system.setQuality( "cadena", true );
+			system.write("<p> Vaya...¡qué sorpresa!, rebuscando entre esa pila de alimentos aparece encuentras una cadena de oro con la inicial de E, sospechoso cuanto menos..., habrá que investigarlo...</p>");
+
+		},
 		exit: function(character, system, to) {
+				system.setQuality("contador", character.qualities.contador+1);
+				system.setQuality("porcentaje", character.qualities.contador/0.13);	
                 		system.setQuality("progreso", character.qualities.progreso+20);
 				system.setQuality("total", character.qualities.progreso/24);
-            }
-            }
+		},
+		'veneno': function(character, system, action) {
+			         system.setQuality( "veneno", true );
+				 system.write("<p> ¡¡¡Y tan sospechoso!!! son unas gotas del veneno con el que fue asesinado la víctima, todo esto va cobrando sentido. </p>");
+		},
+            
+          }}
     )
 
 };
@@ -349,12 +411,29 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-     progreso: new undum.IntegerQuality(
-        "Progreso sobre 100%", {priority:"0001", group:'stats'}
+	
+    progreso: new undum.IntegerQuality(
+        "Horas dedicadas en el caso", {priority:"0001", group:'stats'}
     ),
     total: new undum.IntegerQuality(
         "Conversion en dias", {priority:"0001", group:'stats'}
-    ),	
+    ),
+        contador: new undum.IntegerQuality(
+        "Total de situaciones visitadas(Maximo 13)", {priority:"0001", group:'stats'}
+    ),
+    porcentaje: new undum.IntegerQuality(
+        "Porcentaje de situaciones vistas", {priority:"0001", group:'stats'}
+    ),
+    cadena: new undum.OnOffQuality(
+        "Cadena", {priority:"0001", group:'pistas', onDisplay:"&#10003;"}
+    ),
+    llave: new undum.OnOffQuality(
+        "Llave", {priority:"0002", group:'pistas', onDisplay:"&#10003;"}
+    ),
+	veneno: new undum.OnOffQuality(
+        "Gota de Veneno", {priority:"0003", group:'pistas', onDisplay:"&#10003;"}
+    ),
+		
 };
 
 // ---------------------------------------------------------------------------
@@ -365,14 +444,22 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
      stats: new undum.QualityGroup(null, {priority:"0001"}),
+     pistas: new undum.QualityGroup('Pistas', {priority:"0001"})
+     
   
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
-undum.game.init = function(character, system) {
+undum.game.init = function(character, system) {   
+    character.qualities.contador = 0;  
+    character.qualities.porcentaje = 0;   	   
     character.qualities.progreso = 0; 
     character.qualities.total = 0; 
+    system.setQuality( "cadena" , false);
+    system.setQuality( "llave" , false);
+    system.setQuality( "veneno" , false);
+
     
 };
