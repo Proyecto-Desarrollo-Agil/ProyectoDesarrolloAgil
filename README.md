@@ -123,8 +123,8 @@ https://trello.com/b/P6KbMcYQ/tercer-sprint-13-04-2020
 Debido a que nuestro grupo tuvimos una confusión y en el sprint 0 ya comenzamos con el desarrollo del juego en este sprint hemos continuado con el punto de donde lo dejamos:
 
 **Captura Sprint Backlog antes de la Product Backlog Refinement**
-![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.2.PNG)
-3.1
+![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.1.PNG)
+
 
 Dado que teníamos pendientes aun un requisito innegociable y un requisito pendiente del sprint pasado y ambos considerábamos que tenían una dificultad considerablemente alta para nuestro conocimiento pues no sabíamos como hacerlo exáctamente, partimos de la base de realizar dos requisitos solamente. Posteriormente se verá cómo finalmente no quedó así.
 
@@ -137,20 +137,20 @@ _______________________________
 
 Captura de la descomposición de tareas al inicio del Sprint
 
-![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.3.PNG)
-3.2
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.2.PNG)
+
 _______________________________
 
 #### Captura del Product Backlog tras Product Backlog Refinement
 
-![captura3](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.4.PNG)
-3.3
+![captura3](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.3.PNG)
+
 _______________________________
 
 #### Captura del Sprint Backlog tras Product Backlog Refinement
 
-![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.1.PNG)
-3.4
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.4.PNG)
+
 
 **Observaciones:** Tal y como se puede observar hay 2 requisitos nuevos. En primer lugar el **requisito 3** se debe a que durante la realización del requisito que aborda la creación de algun puzzle, se ha creado una situación nueva, por tanto, para el cumplimiento de este requisito, era necesario meter una nueva imagen correspondiente a esa nueva situación, es por ello que este requisito se vuelve a incluir.
 Por otro lado el **requisito 4** se incorporar al observar que no íbamos tan mal de tiempo e igual el sprint Backlog se quedaba un poco pobre, es por ello que observamos que el apartado donde se mostraba el progreso del jugador no quedaba demasiado claro, y decidimos mejorarlo y que de esta forma quede todo más claro de cara al usuario, mejorando su experiencia.
@@ -165,8 +165,8 @@ _______________________________
 
 #### Captura del Sprint Backlog y Sprint Planning
 
-![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/Desarrollo/Captura2.5.PNG)
-3.5
+![captura4](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/Captura3.5.PNG)
+
 
 _______________________________
 Tablero de Trello con el Product Backlog:
