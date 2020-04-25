@@ -251,6 +251,7 @@ undum.game.situations = {
 	saladeseguridad2: new undum.SimpleSituation(
 
 	"<h2>Sala de seguridad</h2> \
+	<img class='img-situation' src='./media/Imagenes/cerrado.jpg'> \
 	<p>Cuando llegas a la sala de seguridad, se encuentra cerrada y parece ser que Elodín se hace un poco el tonto como quien no sabe nada... \
 	extraño cuanto menos... pues habrá que buscar esa llave sea como sea, es en ese momento cuando recuerdas que no has entrado al <a href='almacen/inicio'> almacén </a>y que \
 	probablemente ese sea el único sitio donde no has investigado</p>"
