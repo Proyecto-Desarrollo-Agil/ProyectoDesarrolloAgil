@@ -176,3 +176,30 @@ https://trello.com/b/5VYmQBPs/product-backlog
 Tablero de Trello con el Sprint Backlog:
 
 https://trello.com/b/47tI6Exl/cuarto-sprint-25-04-2020
+
+_______________________________
+## Métricas del proyecto
+
+#### Tabla de datos del proyecto en su totalidad 
+
+![captura1](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/TablaFinal.PNG)
+
+#### Gráfica Burndown
+
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/burndown.PNG)
+
+#### Gráfica Burn-up
+
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/burn-up.PNG)
+
+#### Tabla de velocidades
+
+![captura2](https://github.com/Proyecto-Desarrollo-Agil/ProyectoDesarrolloAgil/blob/master/velocidades.PNG)
+
+#### Tablas y gráficas por cada Sprint
+En nuestro caso, debido a que tuvimos ciertos problemas con los integrantes del grupo como es el caso de Alberto y dada la situación excepcional que vivimos hoy en día de confinamiento no pudimos llevar un control diario de lo que se iba haciendo, es decir, la monitorización de las horas dedicadas. Además el resto de miembros que formamos el grupo activo de trabajo no hemos llevado un control exacto con Trello, por lo que en ocasiones, las tareas se marcaban completadas hasta varios días después de su verdadera finalización.
+Dado estos motivos hemos decidido no realizar este apartado de la práctica pues no disponemos de los datos reales, ni siquiera de los datos aproximados, es por ello que llegamos a la conclusión de dejarlo hasta aquí.
+
+#### Conclusiones
+Con respecto a los datos que si tenemos y ya hemos expuesto anteriormente concluimos que nuestro trabajo no ha sido exactamente como debería haber sido, sin embargo, consideramos que en un grupo de trabajo es complicado que siempre se ajuste a los datos esperados pues en este periodo pueden ocurrir diversas situaciones excepcionales que el equipo de trabajo no tiene considerado en un momento determinado y puede dar lugar a ciertas irregularidades en el proceso de desarrollo del proyecto.
+En cuanto a la tabla de velocidades creemos que no es un mal resultado y en este aspecto si estamos contentos porque vemos que hay trabajo detrás y hemos conseguido anteponernos a las adversidades y trabajar de la mejor forma que hemos podido, aunque siempre es mejorable por supuesto.
